@@ -21,6 +21,23 @@
         }
       }
     },
+    "error.insufficient_otp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insufficient Otp"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insufficient Otp"
+          }
+        }
+      }
+    },
     "error.invalid_email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -34,6 +51,99 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Invalid email"
+          }
+        }
+      }
+    },
+    "error.wrong_otp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wrong OTP"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wrong OTP"
+          }
+        }
+      }
+    },
+    "Favourite" : {
+
+    },
+    "Favourite Screen" : {
+
+    },
+    "Home" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "main.favourite" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favourite"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favourite"
+          }
+        }
+      }
+    },
+    "main.home" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
+      }
+    },
+    "main.profile" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        }
+      }
+    },
+    "main.search" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
           }
         }
       }
@@ -55,19 +165,93 @@
         }
       }
     },
+    "profile.deleteAccount" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete account"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete account"
+          }
+        }
+      }
+    },
+    "profile.editAccount" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit account"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit account"
+          }
+        }
+      }
+    },
+    "profile.editProfile" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit profile"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit profile"
+          }
+        }
+      }
+    },
+    "profile.logout" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logout"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logout"
+          }
+        }
+      }
+    },
+    "Search" : {
+
+    },
+    "Search Screen" : {
+
+    },
     "sign_in.email" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メールアドレス"
+            "value" : "Sign in"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "メールアドレス"
+            "value" : "Sign in"
           }
         }
       }
@@ -95,13 +279,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "認証コードを送る"
+            "value" : "Send OTP"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "認証コードを送る"
+            "value" : "Send OTP"
           }
         }
       }
@@ -112,13 +296,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "認証する"
+            "value" : "Verify"
           }
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "認証する"
+            "state" : "needs_review",
+            "value" : "Verify"
           }
         }
       }
@@ -129,13 +313,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "認証メールアドレスを変更する"
+            "value" : "Change verification email"
           }
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "認証メールアドレスを変更する"
+            "state" : "translated",
+            "value" : "Change verification email"
           }
         }
       }
@@ -146,13 +330,30 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "に届いた6桁の番号を入力してください。"
+            "value" : "Please enter the 6-digit code"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "に届いた6桁の番号を入力してください。"
+            "value" : "Please enter the 6-digit code"
+          }
+        }
+      }
+    },
+    "verify_otp_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verify OTP error"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verify OTP error"
           }
         }
       }
@@ -163,13 +364,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メールをチェック！"
+            "value" : "Verify OTP"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "メールをチェック！"
+            "value" : "Verify OTP"
           }
         }
       }
@@ -180,16 +381,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "コードを再送する"
+            "value" : "Resend OTP"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "コードを再送する"
+            "value" : "Resend OTP"
           }
         }
       }
+    },
+    "Welcome Home!" : {
+
     }
   },
   "version" : "1.1"

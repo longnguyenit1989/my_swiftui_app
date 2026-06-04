@@ -10,6 +10,4 @@ import Foundation
 struct SignInState {
     var email: String = ""
     var isLoginSuccess = false
-    
-    var viewState = ViewState()
 }

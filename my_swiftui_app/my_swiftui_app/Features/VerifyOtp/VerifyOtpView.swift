@@ -8,32 +8,41 @@
 import SwiftUI
 
 struct VerifyOtpView: View {
-    @State private var otp = ""
-    @StateObject private var viewModel: VerifyOtpViewModel
-    @State private var toastMessage: String?
+    @EnvironmentObject private var session: SessionManager
     
-    init(email: String) {
-        _viewModel = StateObject(wrappedValue: VerifyOtpViewModel(email: email))
-    }
+    @StateObject private var viewModel = VerifyOtpViewModel()
+    @State private var otp = ""
+    @State private var toastMessage: String?
+    let email: String
     
     var body: some View {
         VStack {
-            Text(viewModel.state.email).textJp14Bold()
-            Text(AppStrings.VerifyOtp.enterVerificationCode).textJp14()
-                .padding(.bottom, 24)
+            Text(email).textJp14Bold()
+            
+            Text(AppStrings.VerifyOtp.enterVerificationCode)
+                .textJp14()
+                .padding(.bottom, AppSpacing.lg)
+            
             OTPDigitBox(otp: $otp)
-                .padding(.bottom, 24)
-            PrimaryButtonView(text: AppStrings.VerifyOtp.verify) {
-                
+                .padding(.bottom, AppSpacing.lg)
+            
+            PrimaryButtonView(
+                text: AppStrings.VerifyOtp.verify,
+                isDisabled: otp.isEmpty
+            ) {
+                let success = await viewModel.submitOTP(otp: otp)
+                if success {
+                    session.login(email: email)
+                }
             }
-            .padding(.bottom, 24)
+            .padding(.bottom, AppSpacing.lg)
             
             Button {
                 showToast(AppStrings.VerifyOtp.resendCode)
             } label: {
                 Text(AppStrings.VerifyOtp.resendCode).textJp14Underlined()
             }
-            .padding(.bottom, 12)
+            .padding(.bottom, AppSpacing.sm)
             
             Button {
                 showToast(AppStrings.VerifyOtp.changeVerificationEmail)
@@ -43,8 +52,9 @@ struct VerifyOtpView: View {
             
             Spacer()
         }
-        .navigationTitle(AppStrings.VerifyOtp.title)
         .padding()
+        .navigationTitle(AppStrings.VerifyOtp.title)
+        .appContainer($viewModel.viewState)
         .toast($toastMessage)
     }
     
@@ -52,7 +62,6 @@ struct VerifyOtpView: View {
         toastMessage = message
     }
 }
-
 
 #Preview {
     VerifyOtpView(email: "test@gmail.com")

@@ -25,17 +25,14 @@ struct OTPDigitBox: View {
                     otp = String(newValue.prefix(length))
                         .filter(\.isNumber)
                 }
-            
             HStack(spacing: 12) {
                 ForEach(0..<length, id: \.self) { index in
-                    
                     ZStack {
                         if digit(at: index).isEmpty &&
                             otp.count == index &&
                             isFocused {
                             BlinkingCursor()
                         }
-                        
                         Text(digit(at: index))
                             .font(.title2.bold())
                     }
@@ -69,7 +66,6 @@ struct OTPDigitBox: View {
 
 private struct BlinkingCursor: View {
     @State private var visible = true
-    
     var body: some View {
         Rectangle()
             .frame(width: 2, height: 24)
@@ -91,7 +87,6 @@ private struct BlinkingCursor: View {
 
 private struct OTPPreviewWrapper: View {
     @State private var otp = ""
-    
     var body: some View {
         OTPDigitBox(otp: $otp)
             .padding()

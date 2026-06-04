@@ -9,19 +9,18 @@ import SwiftUI
 
 struct LoadingOverlayModifier: ViewModifier {
     let isLoading: Bool
-
+    
     func body(content: Content) -> some View {
         ZStack {
-            content
-                .disabled(isLoading)
-
+            content.disabled(isLoading)
+            
             if isLoading {
                 Color.black.opacity(0.3)
                     .ignoresSafeArea()
                     .contentShape(Rectangle())
-
-                ProgressView()
-                    .scaleEffect(1.5)
+                    .allowsHitTesting(true)
+                
+                ProgressView().scaleEffect(1.5)
             }
         }
     }

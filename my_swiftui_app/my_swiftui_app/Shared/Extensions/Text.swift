@@ -14,7 +14,7 @@ extension Text {
     ) -> some View {
         self
             .font(font)
-            .foregroundColor(AppTheme.shared.textPrimary)
+            .foregroundColor(AppColor.shared.textPrimary)
             .kerning(fontSize * 0.05)
             .lineSpacing(fontSize * 0.5)
     }
@@ -41,8 +41,8 @@ extension Text {
     
     func textJp16() -> some View {
         applyTextStyle(
-            font: AppTextStyle.jp14Bold,
-            fontSize: AppTextStyle.jp14Size
+            font: AppTextStyle.jp16,
+            fontSize: AppTextStyle.jp16Size
         )
     }
 }

@@ -9,41 +9,34 @@ import Foundation
 import Combine
 
 @MainActor
-final class SignInViewModel: ObservableObject {
+final class SignInViewModel: BaseViewModel {
     @Published var state = SignInState()
 
     func signIn() async {
-        guard validate() else {
-            return
-        }
+        guard validate() else { return }
 
-        state.viewState.isLoading = true
-        defer {
-            state.viewState.isLoading = false
-        }
-        do {
-            try await Task.sleep(for: .seconds(2))
-            state.isLoginSuccess = true
-            // call api
-        } catch {
-            setError(error.localizedDescription)
-        }
+        setLoading(true)
+        defer { setLoading(false) }
+
+        try? await Task.sleep(for: .seconds(2))
+        state.isLoginSuccess = true
     }
 
     private func validate() -> Bool {
         if state.email.isEmpty {
-            setError(AppStrings.Error.emptyEmail)
+            setError(
+                title: AppStrings.Error.signInError,
+                message: SignInError.emptyEmail.message
+            )
             return false
         }
         if !state.email.isValidEmail {
-            setError(AppStrings.Error.invalidEmail)
+            setError(
+                title: AppStrings.Error.signInError,
+                message: SignInError.invalidEmail.message
+            )
             return false
         }
         return true
-    }
-    
-    private func setError(_ messageError: String) {
-        state.viewState.errorMessage = messageError
-        state.viewState.showError = true
     }
 }

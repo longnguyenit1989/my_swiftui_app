@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LogoBetterTech: View {
+struct LogoApp: View {
     var body: some View {
         VStack {
             Image("logoApp")
@@ -20,5 +20,5 @@ struct LogoBetterTech: View {
 }
 
 #Preview {
-    LogoBetterTech()
+    LogoApp()
 }

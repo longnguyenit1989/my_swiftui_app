@@ -14,41 +14,49 @@ struct PrimaryButtonView: View {
     let foregroundColor: Color
     let size: CGFloat
     let height: CGFloat
-    let action: () -> Void
+    let isDisabled: Bool
+    let action: () async -> Void
     
     init(
         text: String,
-        backgroundColor: Color = AppTheme.shared.primary,
+        backgroundColor: Color = AppColor.shared.primary,
         foregroundColor: Color = .white,
         size: CGFloat = 18,
         height: CGFloat = 55,
-        action: @escaping () -> Void
+        isDisabled: Bool = false,
+        action: @escaping () async -> Void
     ) {
         self.text = text
         self.backgroundColor = backgroundColor
         self.foregroundColor = foregroundColor
         self.size = size
         self.height = height
+        self.isDisabled = isDisabled
         self.action = action
     }
     
     var body: some View {
-        Button(action: action) {
-            Text(text)
-                .font(.system(size: size))
-                .foregroundColor(foregroundColor)
-                .frame(maxWidth: .infinity)
-                .frame(height: height)
-                .background(backgroundColor)
-                .clipShape(Capsule())
+            Button {
+                Task {
+                    await action()
+                }
+            } label: {
+                Text(text)
+                    .font(.system(size: size))
+                    .foregroundColor(foregroundColor)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: height)
+                    .background(isDisabled ? Color.gray.opacity(0.4) : backgroundColor)
+                    .clipShape(Capsule())
+            }
+            .disabled(isDisabled)
         }
-    }
 }
 
 #Preview {
     PrimaryButtonView(
         text: "Test",
-        backgroundColor: AppTheme.shared.primary,
+        backgroundColor: AppColor.shared.primary,
         foregroundColor: .white,
         size: 18, height: 55, action: {}
     )

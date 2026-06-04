@@ -16,7 +16,7 @@ struct CustomTextFieldView: View {
             TextField(title, text: $text)
                 .padding(.horizontal, 12)
                 .frame(height: 48)
-                .overlay(RoundedRectangle(cornerRadius: 8).stroke(AppTheme.shared.border, lineWidth: 1))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(AppColor.shared.border, lineWidth: 1))
         }
     }
 }

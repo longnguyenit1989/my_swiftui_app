@@ -5,9 +5,8 @@
 //  Created by OPN-Macbook on 3/6/26.
 //
 
+import Foundation
+
 struct VerifyOtpState {
-    var email: String = ""
     var isVerifyOtpSuccess = false
-    
-    var viewState = ViewState()
 }

@@ -9,12 +9,22 @@ import Foundation
 import Combine
 
 @MainActor
-final class VerifyOtpViewModel: ObservableObject {
-    @Published var state: VerifyOtpState
-    
-    init(email: String) {
-        self.state = VerifyOtpState(
-            email: email
-        )
+final class VerifyOtpViewModel: BaseViewModel {
+    @Published var state = VerifyOtpState()
+
+    func submitOTP(otp: String) async -> Bool {
+        guard otp.count > 5 else {
+            setError(
+                title: AppStrings.Error.verifyOTPError,
+                message: VerifyOtpError.insufficientOTP.message
+            )
+            return false
+        }
+        
+        setLoading(true)
+        defer { setLoading(false) }
+        try? await Task.sleep(for: .seconds(2))
+        
+        return true
     }
 }

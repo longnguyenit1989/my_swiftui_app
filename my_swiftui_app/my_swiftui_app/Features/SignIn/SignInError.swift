@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SignInError {
+enum SignInError: Error {
     case invalidEmail
     case emptyEmail
 

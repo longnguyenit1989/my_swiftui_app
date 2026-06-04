@@ -8,12 +8,8 @@
 import SwiftUI
 
 extension View {
-    func loadingOverlay(_ isLoading: Bool) -> some View {
-        modifier(
-            LoadingOverlayModifier(
-                isLoading: isLoading
-            )
-        )
+    func appContainer(_ viewState: Binding<ViewState>) -> some View {
+        modifier(AppContainerModifier(viewState: viewState))
     }
     
     func toast(_ message: Binding<String?>) -> some View {

@@ -8,9 +8,9 @@
 import SwiftUI
 import Foundation
 
-final class AppTheme {
+final class AppColor {
 
-    static let shared = AppTheme()
+    static let shared = AppColor()
 
     let primary = Color("#D03236")
     let secondary = Color("#C6B79B")
