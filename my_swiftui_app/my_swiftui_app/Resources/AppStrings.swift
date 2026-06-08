@@ -28,6 +28,9 @@ enum AppStrings {
     enum Common {
         static let ok = "ok"
         static let cancel = "cancel"
+        static let product = "product"
+        static let coupon = "coupon"
+        static let store = "store"
     }
 
     enum SignIn {
@@ -45,6 +48,10 @@ enum AppStrings {
     
     enum Home {
         static let welcome = "home.welcome"
+    }
+    
+    enum Favourite {
+        
     }
 
     enum Profile {

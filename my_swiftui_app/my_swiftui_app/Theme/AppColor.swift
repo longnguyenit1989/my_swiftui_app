@@ -19,6 +19,11 @@ final class AppColor {
     let border = Color("#DDDDDD")
     let textPrimary = Color("#24292F")
     let textSecondary = Color("#999999")
+    
+    let primaryLight = Color("#D03236").opacity(0.05)
+    let primaryMuted = Color("#D03236").opacity(0.7)
+    
+    let textTertiary = Color("#8C959F")
 
     private init() {}
 }

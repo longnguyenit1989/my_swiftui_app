@@ -11,7 +11,7 @@ struct ProfileView: View {
     
     @EnvironmentObject private var session: SessionManager
     @EnvironmentObject private var languageManager: LanguageManager
-        
+    
     @State private var showLogoutAlert = false
     @State private var showLanguageSheet = false
     
@@ -37,8 +37,10 @@ struct ProfileView: View {
                     SectionItem(title: AppStrings.Profile.privacy)
                     SectionItem(title: AppStrings.Profile.term)
                     SectionItem(title: AppStrings.Profile.license)
-                    SectionItem(title: AppStrings.Profile.version)
-                        .padding(.bottom,AppSpacing.lg)
+                    SectionItem(title: AppStrings.Profile.version,
+                                trailingText: Bundle.main.versionWithBuild,
+                                hideChevron: true)
+                    .padding(.bottom,AppSpacing.lg)
                     PrimaryButtonView(text: AppStrings.Profile.logout) {
                         showLogoutAlert = true
                     }

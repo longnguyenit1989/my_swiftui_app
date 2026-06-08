@@ -20,17 +20,53 @@ extension Text {
             .lineSpacing(fontSize * 0.5)
     }
     
-    func textJp14() -> some View {
+    func textJp11(
+        color: Color = AppColor.shared.textPrimary
+    ) -> some View {
         applyTextStyle(
-            font: AppTextStyle.jp14,
-            fontSize: AppTextStyle.jp14Size
+            font: AppTextStyle.jp11,
+            fontSize: AppTextStyle.jp14Size,
+            textColor: color
         )
     }
     
-    func textJp14Bold() -> some View {
+    func textJp12(
+        color: Color = AppColor.shared.textPrimary
+    ) -> some View {
+        applyTextStyle(
+            font: AppTextStyle.jp14,
+            fontSize: AppTextStyle.jp14Size,
+            textColor: color
+        )
+    }
+    
+    func textJp12Secondary(
+        color: Color = AppColor.shared.textSecondary
+    ) -> some View {
+        applyTextStyle(
+            font: AppTextStyle.jp12,
+            fontSize: AppTextStyle.jp12Size,
+            textColor: color
+        )
+    }
+    
+    func textJp14(
+        color: Color = AppColor.shared.textPrimary
+    ) -> some View {
+        applyTextStyle(
+            font: AppTextStyle.jp14,
+            fontSize: AppTextStyle.jp14Size,
+            textColor: color
+        )
+    }
+    
+    func textJp14Bold(
+        color: Color = AppColor.shared.textPrimary
+    ) -> some View {
         applyTextStyle(
             font: AppTextStyle.jp14Bold,
-            fontSize: AppTextStyle.jp14Size
+            fontSize: AppTextStyle.jp14Size,
+            textColor: color
         )
     }
     
@@ -40,18 +76,33 @@ extension Text {
             .underline()
     }
     
-    func textJp14Secondary() -> some View {
+    func textJp14Secondary(
+        color: Color = AppColor.shared.textSecondary
+    ) -> some View {
         applyTextStyle(
             font: AppTextStyle.jp14,
             fontSize: AppTextStyle.jp14Size,
-            textColor: AppColor.shared.textSecondary
+            textColor: color
         )
     }
     
-    func textJp16() -> some View {
+    func textJp16(
+        color: Color = AppColor.shared.textPrimary
+    ) -> some View {
         applyTextStyle(
             font: AppTextStyle.jp16,
-            fontSize: AppTextStyle.jp16Size
+            fontSize: AppTextStyle.jp16Size,
+            textColor: color
+        )
+    }
+    
+    func textJp16Bold(
+        color: Color = AppColor.shared.textPrimary
+    ) -> some View {
+        applyTextStyle(
+            font: AppTextStyle.jp16Bold,
+            fontSize: AppTextStyle.jp16Size,
+            textColor: color
         )
     }
 }

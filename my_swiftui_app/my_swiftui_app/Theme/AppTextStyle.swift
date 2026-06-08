@@ -8,9 +8,11 @@
 import SwiftUI
 
 enum AppTextStyle {
-    
+    static let jp11Size: CGFloat = 11
+    static let jp12Size: CGFloat = 12
     static let jp14Size: CGFloat = 14
     static let jp16Size: CGFloat = 16
+    static let jp18Size: CGFloat = 18
     
     static func jp(
         size: CGFloat,
@@ -25,9 +27,12 @@ enum AppTextStyle {
         
         return font
     }
+    static let jp11 = jp(size: jp11Size, weight: .regular)
+    static let jp12 = jp(size: jp12Size, weight: .regular)
     
     static let jp14 = jp(size: jp14Size, weight: .regular)
     static let jp14Bold = jp(size: jp14Size, weight: .bold)
     
     static let jp16 = jp(size: jp16Size, weight: .regular)
+    static let jp16Bold = jp(size: jp16Size, weight: .bold)
 }

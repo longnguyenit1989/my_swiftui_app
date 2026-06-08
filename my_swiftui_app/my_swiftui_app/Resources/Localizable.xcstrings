@@ -22,6 +22,26 @@
         }
       }
     },
+    "coupon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coupon"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "クーポン"
+          }
+        }
+      }
+    },
+    "Coupon" : {
+
+    },
     "error.empty_email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -237,6 +257,26 @@
           }
         }
       }
+    },
+    "product" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "製品"
+          }
+        }
+      }
+    },
+    "Product" : {
+
     },
     "profile.chooseLanguage" : {
       "extractionState" : "manual",
@@ -554,6 +594,26 @@
           }
         }
       }
+    },
+    "store" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Store"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "格納"
+          }
+        }
+      }
+    },
+    "Store" : {
+
     },
     "verify" : {
       "extractionState" : "manual",
