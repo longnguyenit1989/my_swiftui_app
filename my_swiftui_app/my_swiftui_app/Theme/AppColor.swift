@@ -18,6 +18,7 @@ final class AppColor {
     
     let border = Color("#DDDDDD")
     let textPrimary = Color("#24292F")
+    let textSecondary = Color("#999999")
 
     private init() {}
 }

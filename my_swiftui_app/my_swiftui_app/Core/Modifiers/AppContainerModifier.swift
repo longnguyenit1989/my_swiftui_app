@@ -23,8 +23,8 @@ struct AppContainerModifier: ViewModifier {
             .interactiveDismissDisabled(isLoading)
             .alert(item: $viewState.alert) { alert in
                 Alert(
-                    title: Text(alert.title),
-                    message: Text(alert.message),
+                    title: Text(alert.title.l10n),
+                    message: Text(alert.message.l10n),
                     dismissButton: .default(Text(AppStrings.Common.ok))
                 )
             }

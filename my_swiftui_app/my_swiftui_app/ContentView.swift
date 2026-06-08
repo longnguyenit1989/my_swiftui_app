@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject private var session: SessionManager
-    //    @AppStorage("isVerified") private var isVerified = false
 
     var body: some View {
         Group {

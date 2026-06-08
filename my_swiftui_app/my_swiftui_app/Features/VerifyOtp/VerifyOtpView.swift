@@ -19,7 +19,7 @@ struct VerifyOtpView: View {
         VStack {
             Text(email).textJp14Bold()
             
-            Text(AppStrings.VerifyOtp.enterVerificationCode)
+            Text(AppStrings.VerifyOtp.enterVerificationCode.l10n)
                 .textJp14()
                 .padding(.bottom, AppSpacing.lg)
             
@@ -40,20 +40,20 @@ struct VerifyOtpView: View {
             Button {
                 showToast(AppStrings.VerifyOtp.resendCode)
             } label: {
-                Text(AppStrings.VerifyOtp.resendCode).textJp14Underlined()
+                Text(AppStrings.VerifyOtp.resendCode.l10n).textJp14Underlined()
             }
             .padding(.bottom, AppSpacing.sm)
             
             Button {
                 showToast(AppStrings.VerifyOtp.changeVerificationEmail)
             } label: {
-                Text(AppStrings.VerifyOtp.changeVerificationEmail).textJp14Underlined()
+                Text(AppStrings.VerifyOtp.changeVerificationEmail.l10n).textJp14Underlined()
             }
             
             Spacer()
         }
         .padding()
-        .navigationTitle(AppStrings.VerifyOtp.title)
+        .navigationTitle(AppStrings.VerifyOtp.title.l10n)
         .appContainer($viewModel.viewState)
         .toast($toastMessage)
     }

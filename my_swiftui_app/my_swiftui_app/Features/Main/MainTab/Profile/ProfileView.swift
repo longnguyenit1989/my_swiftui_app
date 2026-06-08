@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct ProfileView: View {
-
+    
+    @EnvironmentObject private var session: SessionManager
+    @EnvironmentObject private var languageManager: LanguageManager
+        
+    @State private var showLogoutAlert = false
+    @State private var showLanguageSheet = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -16,11 +22,44 @@ struct ProfileView: View {
                     SectionHeader(title: AppStrings.Profile.editProfile)
                     SectionItem(title: AppStrings.Profile.editAccount)
                     SectionItem(title: AppStrings.Profile.deleteAccount)
+                        .padding(.bottom,AppSpacing.lg)
+                    SectionHeader(title: AppStrings.Profile.setting)
+                    SectionItem(
+                        title: AppStrings.Profile.language,
+                        action: {
+                            showLanguageSheet = true
+                        },
+                        trailingText: languageManager.currentLanguage.displayName)
+                    SectionItem(title: AppStrings.Profile.notification)
+                        .padding(.bottom,AppSpacing.lg)
+                    SectionHeader(title: AppStrings.Profile.other)
+                    SectionItem(title: AppStrings.Profile.contactUs)
+                    SectionItem(title: AppStrings.Profile.privacy)
+                    SectionItem(title: AppStrings.Profile.term)
+                    SectionItem(title: AppStrings.Profile.license)
+                    SectionItem(title: AppStrings.Profile.version)
+                        .padding(.bottom,AppSpacing.lg)
+                    PrimaryButtonView(text: AppStrings.Profile.logout) {
+                        showLogoutAlert = true
+                    }
                 }
             }
             .padding()
-            .navigationTitle(AppStrings.Main.profile)
+            .navigationTitle(Text(AppStrings.Main.profile.l10n))
             .navigationBarTitleDisplayMode(.inline)
+            .alert(AppStrings.Profile.logout.l10n, isPresented: $showLogoutAlert) {
+                Button(AppStrings.Common.cancel.l10n, role: .cancel) {}
+                Button(AppStrings.Profile.logout.l10n, role: .destructive) {
+                    session.logout()
+                }
+            } message: {
+                Text(AppStrings.Profile.sureLogout.l10n)
+            }
+            .sheet(isPresented: $showLanguageSheet) {
+                LanguageSheetView()
+                    .presentationDetents([.height(200)])
+                    .presentationDragIndicator(.visible)
+            }
         }
     }
 }

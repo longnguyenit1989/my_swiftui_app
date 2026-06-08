@@ -10,8 +10,12 @@ import SwiftUI
 struct SearchView: View {
     var body: some View {
         NavigationStack {
-            Text("Search Screen")
-                .navigationTitle("Search")
+            VStack {
+                
+            }
+            .padding()
+            .navigationTitle(Text(AppStrings.Main.search.l10n))
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

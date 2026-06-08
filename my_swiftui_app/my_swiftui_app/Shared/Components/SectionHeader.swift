@@ -21,7 +21,7 @@ struct SectionHeader: View {
 
             Spacer(minLength: 0)
 
-            Text(title)
+            Text(title.l10n)
                 .textJp14Bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -29,7 +29,7 @@ struct SectionHeader: View {
 
             Rectangle()
                 .fill(AppColor.shared.border)
-                .frame(height: 2)
+                .frame(height: 1)
         }
         .frame(maxWidth: .infinity)
         .frame(height: height)

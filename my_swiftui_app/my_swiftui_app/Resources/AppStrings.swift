@@ -6,44 +6,67 @@
 //
 
 import Foundation
+
 enum AppStrings {
+
     enum Main {
-        static let home = String(localized: "main.home")
-        static let search = String(localized: "main.search")
-        static let favourite = String(localized: "main.favourite")
-        static let profile = String(localized: "main.profile")
+        static let home = "main.home"
+        static let search = "main.search"
+        static let favourite = "main.favourite"
+        static let profile = "main.profile"
     }
-    
+
     enum Error {
-        static let invalidEmail = String(localized: "error.invalid_email")
-        static let emptyEmail = String(localized: "error.empty_email")
-        static let signInError = String(localized: "sign_in.error")
-        static let wrongOTP = String(localized: "error.wrong_otp")
-        static let insufficientOTP = String(localized: "error.insufficient_otp")
-        static let verifyOTPError = String(localized: "verify_otp_error")
+        static let invalidEmail = "error.invalid_email"
+        static let emptyEmail = "error.empty_email"
+        static let signInError = "sign_in.error"
+        static let wrongOTP = "error.wrong_otp"
+        static let insufficientOTP = "error.insufficient_otp"
+        static let verifyOTPError = "verify_otp_error"
     }
-    
+
     enum Common {
-        static let ok = String(localized: "ok")
+        static let ok = "ok"
+        static let cancel = "cancel"
     }
-    
+
     enum SignIn {
-        static let sendCode = String(localized: "sign_in.send_code")
-        static let emailPlaceholder = String(localized: "sign_in.email")
+        static let sendCode = "sign_in.send_code"
+        static let emailPlaceholder = "sign_in.email"
     }
-    
+
     enum VerifyOtp {
-        static let title = String(localized: "verify_otp.title")
-        static let enterVerificationCode = String(localized: "verify_otp_enter_verification_code")
-        static let verify = String(localized: "verify")
-        static let resendCode = String(localized: "verify_resend_code")
-        static let changeVerificationEmail = String(localized: "verify_change_verification_email")
+        static let title = "verify_otp.title"
+        static let enterVerificationCode = "verify_otp_enter_verification_code"
+        static let verify = "verify"
+        static let resendCode = "verify_resend_code"
+        static let changeVerificationEmail = "verify_change_verification_email"
     }
     
+    enum Home {
+        static let welcome = "home.welcome"
+    }
+
     enum Profile {
-        static let logout = String(localized: "profile.logout")
-        static let editAccount = String(localized: "profile.editAccount")
-        static let editProfile = String(localized: "profile.editProfile")
-        static let deleteAccount = String(localized: "profile.deleteAccount")
+        static let logout = "profile.logout"
+        static let editAccount = "profile.editAccount"
+        static let editProfile = "profile.editProfile"
+        static let deleteAccount = "profile.deleteAccount"
+        static let setting = "profile.setting"
+        static let language = "profile.language"
+        static let notification = "profile.notification"
+        static let other = "profile.other"
+        static let contactUs = "profile.contact_us"
+        static let privacy = "profile.privacy"
+        static let term = "profile.term"
+        static let license = "profile.license"
+        static let version = "profile.version"
+        static let sureLogout = "profile.sureLogout"
+        static let chooseLanguage = "profile.chooseLanguage"
+    }
+
+    enum LanguageSheet {
+        static let english = "languageSheet.english"
+        static let japanese = "languageSheet.japanese"
     }
 }

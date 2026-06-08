@@ -11,7 +11,7 @@ struct ToastView: View {
     let message: String
 
     var body: some View {
-        Text(message)
+        Text(message.l10n)
             .font(.system(size: 14))
             .foregroundStyle(.white)
             .padding(.horizontal, 16)

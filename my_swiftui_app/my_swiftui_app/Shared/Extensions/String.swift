@@ -6,10 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension String {
     var isValidEmail: Bool {
         let pattern = #"^\S+@\S+\.\S+$"#
         return self.range(of: pattern, options: .regularExpression) != nil
+    }
+
+    var l10n: LocalizedStringKey {
+        LocalizedStringKey(self)
     }
 }

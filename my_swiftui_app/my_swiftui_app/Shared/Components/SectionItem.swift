@@ -11,38 +11,51 @@ struct SectionItem: View {
     let title: String
     let height: CGFloat
     let action: (() -> Void)?
-
+    
+    let trailingText: String?
+    let hideChevron: Bool
+    
     init(
         title: String,
         height: CGFloat = 48,
-        action: (() -> Void)? = nil
+        action: (() -> Void)? = nil,
+        trailingText: String? = nil,
+        hideChevron: Bool = false,
     ) {
         self.title = title
         self.height = height
         self.action = action
+        self.trailingText = trailingText
+        self.hideChevron = hideChevron
     }
-
+    
     var body: some View {
         Button {
             action?()
         } label: {
             VStack(spacing: 0) {
                 HStack {
-                    Text(title).textJp14()
-
+                    Text(title.l10n).textJp14()
+                    
                     Spacer()
-
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(AppColor.shared.primary)
-                        .font(.system(size: 14, weight: .medium))
-                        .padding(.trailing, AppSpacing.xs)
+                    
+                    if let trailingText, !trailingText.isEmpty {
+                        Text(trailingText.l10n).textJp14Secondary()
+                    }
+                    
+                    if !hideChevron {
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(AppColor.shared.primary)
+                            .font(.system(size: 14, weight: .medium))
+                            .padding(.horizontal, AppSpacing.xs)
+                    }
                 }
                 .frame(maxWidth: .infinity)
                 .frame(maxHeight: .infinity)
-
+                
                 Rectangle()
                     .fill(AppColor.shared.border)
-                    .frame(height: 2)
+                    .frame(height: 1)
             }
             .frame(maxWidth: .infinity)
             .frame(height: height)

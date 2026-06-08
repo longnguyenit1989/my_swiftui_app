@@ -7,4 +7,5 @@
 
 enum UserDefaultsKeys {
     static let isVerified = "isVerified"
+    static let selectedLanguage = "selectedLanguage"
 }

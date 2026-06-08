@@ -41,7 +41,7 @@ struct PrimaryButtonView: View {
                     await action()
                 }
             } label: {
-                Text(text)
+                Text(text.l10n)
                     .font(.system(size: size))
                     .foregroundColor(foregroundColor)
                     .frame(maxWidth: .infinity)

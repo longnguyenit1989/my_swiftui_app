@@ -13,22 +13,22 @@ struct MainTabView: View {
             HomeView()
                 .tabItem {
                     Image(systemName: "house")
-                    Text(AppStrings.Main.home)
+                    Text(AppStrings.Main.home.l10n)
                 }
             SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
-                    Text(AppStrings.Main.search)
+                    Text(AppStrings.Main.search.l10n)
                 }
             FavouriteView()
                 .tabItem {
                     Image(systemName: "heart")
-                    Text(AppStrings.Main.favourite)
+                    Text(AppStrings.Main.favourite.l10n)
                 }
             ProfileView()
                 .tabItem {
                     Image(systemName: "person")
-                    Text(AppStrings.Main.profile)
+                    Text(AppStrings.Main.profile.l10n)
                 }
         }
         .tint(AppColor.shared.primary)

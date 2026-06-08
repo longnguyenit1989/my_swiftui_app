@@ -14,19 +14,14 @@ struct HomeView: View {
         NavigationStack {
             VStack(spacing: AppSpacing.xl) {
                 Spacer()
-
-                Text("Welcome Home!")
+                Text(AppStrings.Home.welcome.l10n)
                     .textJp14Bold()
                     .scaleEffect(1.5)
-
-                PrimaryButtonView(text: AppStrings.Profile.logout) {
-                    session.logout()
-                }
-
                 Spacer()
             }
             .padding()
-            .navigationTitle("Home")
+            .navigationTitle(Text(AppStrings.Main.home.l10n))
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

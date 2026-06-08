@@ -10,8 +10,12 @@ import SwiftUI
 struct FavouriteView: View {
     var body: some View {
         NavigationStack {
-            Text("Favourite Screen")
-                .navigationTitle("Favourite")
+            VStack {
+                
+            }
+            .padding()
+            .navigationTitle(Text(AppStrings.Main.favourite.l10n))
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

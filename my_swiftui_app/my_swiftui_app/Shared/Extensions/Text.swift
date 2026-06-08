@@ -10,11 +10,12 @@ import SwiftUI
 extension Text {
     private func applyTextStyle(
         font: Font,
-        fontSize: CGFloat
+        fontSize: CGFloat,
+        textColor: Color? = nil
     ) -> some View {
         self
             .font(font)
-            .foregroundColor(AppColor.shared.textPrimary)
+            .foregroundColor(textColor ?? AppColor.shared.textPrimary)
             .kerning(fontSize * 0.05)
             .lineSpacing(fontSize * 0.5)
     }
@@ -37,6 +38,14 @@ extension Text {
         self
             .font(AppTextStyle.jp14)
             .underline()
+    }
+    
+    func textJp14Secondary() -> some View {
+        applyTextStyle(
+            font: AppTextStyle.jp14,
+            fontSize: AppTextStyle.jp14Size,
+            textColor: AppColor.shared.textSecondary
+        )
     }
     
     func textJp16() -> some View {

@@ -4,6 +4,24 @@
     "" : {
 
     },
+    "cancel" : {
+      "comment" : "Cancel",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        }
+      }
+    },
     "error.empty_email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -16,7 +34,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Empty email"
+            "value" : "空のメール"
           }
         }
       }
@@ -33,7 +51,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Insufficient Otp"
+            "value" : "OTPが不十分"
           }
         }
       }
@@ -49,8 +67,8 @@
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Invalid email"
+            "state" : "translated",
+            "value" : "メールアドレスの形式が正しくありません"
           }
         }
       }
@@ -67,24 +85,76 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wrong OTP"
+            "value" : "認証コードが正しくありません"
           }
         }
       }
     },
     "Favourite" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お気に入り"
+          }
+        }
+      }
     },
-    "Favourite Screen" : {
-
+    "home.welcome" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome home"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "おかえりなさい！"
+          }
+        }
+      }
     },
-    "Home" : {
-
+    "languageSheet.english" : {
+      "comment" : "Japanese",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "英語"
+          }
+        }
+      }
     },
-    "Key" : {
-      "extractionState" : "manual"
+    "languageSheet.japanese" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Japanese"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日本語"
+          }
+        }
+      }
     },
     "main.favourite" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -95,12 +165,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Favourite"
+            "value" : "お気に入り"
           }
         }
       }
     },
     "main.home" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -111,12 +182,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Home"
+            "value" : "ホーム"
           }
         }
       }
     },
     "main.profile" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -127,12 +199,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Profile"
+            "value" : "プロフィール"
           }
         }
       }
     },
     "main.search" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -143,7 +216,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search"
+            "value" : "検索"
           }
         }
       }
@@ -165,6 +238,40 @@
         }
       }
     },
+    "profile.chooseLanguage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose language"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "言語を選択"
+          }
+        }
+      }
+    },
+    "profile.contact_us" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact us"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お問い合わせ"
+          }
+        }
+      }
+    },
     "profile.deleteAccount" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -177,7 +284,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Delete account"
+            "value" : "アカウント削除"
           }
         }
       }
@@ -194,7 +301,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edit account"
+            "value" : "アカウント情報"
           }
         }
       }
@@ -211,7 +318,41 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edit profile"
+            "value" : "プロフィールを編集"
+          }
+        }
+      }
+    },
+    "profile.language" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "言語"
+          }
+        }
+      }
+    },
+    "profile.license" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "License"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライセンス"
           }
         }
       }
@@ -228,16 +369,140 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Logout"
+            "value" : "ログアウト"
+          }
+        }
+      }
+    },
+    "profile.notification" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        }
+      }
+    },
+    "profile.other" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Other"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "その他"
+          }
+        }
+      }
+    },
+    "profile.privacy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プライバシーポリシー"
+          }
+        }
+      }
+    },
+    "profile.setting" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setting"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        }
+      }
+    },
+    "profile.sureLogout" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to logout ?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログアウトしてもよろしいですか？"
+          }
+        }
+      }
+    },
+    "profile.term" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Term"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "利用規約"
+          }
+        }
+      }
+    },
+    "profile.version" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン"
           }
         }
       }
     },
     "Search" : {
-
-    },
-    "Search Screen" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "検索"
+          }
+        }
+      }
     },
     "sign_in.email" : {
       "extractionState" : "manual",
@@ -250,8 +515,8 @@
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Sign in"
+            "state" : "translated",
+            "value" : "メールアドレス"
           }
         }
       }
@@ -267,8 +532,8 @@
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Sign In Error"
+            "state" : "translated",
+            "value" : "サインインに失敗しました"
           }
         }
       }
@@ -279,13 +544,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Send OTP"
+            "value" : "Send code"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "Send OTP"
+            "value" : "認証コードを送信"
           }
         }
       }
@@ -301,8 +566,8 @@
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Verify"
+            "state" : "translated",
+            "value" : "認証する"
           }
         }
       }
@@ -319,7 +584,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Change verification email"
+            "value" : "メールアドレスを変更"
           }
         }
       }
@@ -336,7 +601,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Please enter the 6-digit code"
+            "value" : "6桁の認証コードを入力してください"
           }
         }
       }
@@ -353,7 +618,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verify OTP error"
+            "value" : "認証エラー"
           }
         }
       }
@@ -369,8 +634,8 @@
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Verify OTP"
+            "state" : "translated",
+            "value" : "認証コード入力"
           }
         }
       }
@@ -381,19 +646,33 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Resend OTP"
+            "value" : "Resend code"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "Resend OTP"
+            "value" : "認証コードを再送信"
           }
         }
       }
     },
     "Welcome Home!" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome home !"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おかえりなさい！"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"
