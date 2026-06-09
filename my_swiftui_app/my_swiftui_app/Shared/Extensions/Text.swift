@@ -20,12 +20,12 @@ extension Text {
             .lineSpacing(fontSize * 0.5)
     }
     
-    func textJp11(
+    func textJp10(
         color: Color = AppColor.shared.textPrimary
     ) -> some View {
         applyTextStyle(
-            font: AppTextStyle.jp11,
-            fontSize: AppTextStyle.jp14Size,
+            font: AppTextStyle.jp10,
+            fontSize: AppTextStyle.jp10Size,
             textColor: color
         )
     }

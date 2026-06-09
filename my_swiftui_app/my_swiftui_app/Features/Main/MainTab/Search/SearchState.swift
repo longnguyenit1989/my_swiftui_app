@@ -9,4 +9,5 @@ import Foundation
 
 struct SearchState {
     var coupons: [Coupon] = []
+    var products: [Product] = []
 }

@@ -15,4 +15,10 @@ extension View {
     func toast(_ message: Binding<String?>) -> some View {
         self.modifier(ToastModifier(message: message))
     }
+    
+    func singleLine() -> some View {
+        self
+            .lineLimit(1)
+            .truncationMode(.tail)
+    }
 }

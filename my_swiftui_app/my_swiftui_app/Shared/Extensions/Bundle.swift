@@ -19,4 +19,30 @@ extension Bundle {
     var versionWithBuild: String {
         "\(appVersion) (\(buildNumber))"
     }
+    
+    func decode<T: Decodable>(
+            _ type: T.Type,
+            from file: String
+        ) throws -> T {
+            guard let url = url(
+                forResource: file,
+                withExtension: "json"
+            ) else {
+                throw NSError(
+                    domain: "Bundle",
+                    code: 404,
+                    userInfo: [
+                        NSLocalizedDescriptionKey:
+                            "\(file).json not found"
+                    ]
+                )
+            }
+
+            let data = try Data(contentsOf: url)
+
+            return try JSONDecoder().decode(
+                type,
+                from: data
+            )
+        }
 }

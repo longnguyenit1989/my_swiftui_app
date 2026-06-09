@@ -55,7 +55,7 @@ struct SectionItem: View {
                 
                 Rectangle()
                     .fill(AppColor.shared.border)
-                    .frame(height: 1)
+                    .frame(height: AppConstants.borderWidth)
             }
             .frame(maxWidth: .infinity)
             .frame(height: height)

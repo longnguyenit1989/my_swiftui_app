@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum AppTextStyle {
-    static let jp11Size: CGFloat = 11
+    static let jp10Size: CGFloat = 11
     static let jp12Size: CGFloat = 12
     static let jp14Size: CGFloat = 14
     static let jp16Size: CGFloat = 16
@@ -27,7 +27,7 @@ enum AppTextStyle {
         
         return font
     }
-    static let jp11 = jp(size: jp11Size, weight: .regular)
+    static let jp10 = jp(size: jp10Size, weight: .regular)
     static let jp12 = jp(size: jp12Size, weight: .regular)
     
     static let jp14 = jp(size: jp14Size, weight: .regular)

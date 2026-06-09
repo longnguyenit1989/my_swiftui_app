@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "imageName": "headphone",
+    "title": "Wireless Bluetooth Headphones",
+    "des": "High-quality wireless headphones with noise cancellation and long battery life.",
+    "storeName": "Tech Store",
+    "starCount": 5.0
+  },
+  {
+    "id": "2",
+    "imageName": "smartWatch",
+    "title": "Smart Fitness Watch",
+    "des": "Track your daily activity, heart rate, and sleep with this smart fitness watch.",
+    "storeName": "Fit World",
+    "starCount": 4.0
+  },
+  {
+    "id": "3",
+    "imageName": "portableBank",
+    "title": "Portable Power Bank",
+    "des": "Compact and powerful power bank with fast charging support.",
+    "storeName": "Mobile Hub",
+    "starCount": 5.0
+  },
+  {
+    "id": "4",
+    "imageName": "gamingMechanicalKeyboard",
+    "title": "Gaming Mechanical Keyboard",
+    "des": "Mechanical keyboard with RGB lighting and tactile switches.",
+    "storeName": "Gaming Zone",
+    "starCount": 4.0
+  },
+  {
+    "id": "5",
+    "imageName": "wirelessMouse",
+    "title": "Wireless Mouse",
+    "des": "Ergonomic wireless mouse designed for productivity and comfort.",
+    "storeName": "Office Supply",
+    "starCount": 4.0
+  },
+  {
+    "id": "6",
+    "imageName": "productImageSample3",
+    "title": "4K Action Camera",
+    "des": "Capture your adventures in stunning 4K resolution.",
+    "storeName": "Outdoor Shop",
+    "starCount": 5.0
+  },
+  {
+    "id": "7",
+    "imageName": "productImageSample1",
+    "title": "Portable Bluetooth Speaker",
+    "des": "Enjoy rich sound and deep bass wherever you go.",
+    "storeName": "Audio Center",
+    "starCount": 4.0
+  },
+  {
+    "id": "8",
+    "imageName": "productImageSample2",
+    "title": "USB-C Charging Hub",
+    "des": "Multi-port charging hub compatible with laptops, tablets, and phones.",
+    "storeName": "Gadget Market",
+    "starCount": 5.0
+  },
+  {
+    "id": "9",
+    "imageName": "productImageSample3",
+    "title": "Laptop Stand",
+    "des": "Adjustable aluminum laptop stand for better ergonomics.",
+    "storeName": "Workspace Pro",
+    "starCount": 4.0
+  },
+  {
+    "id": "10",
+    "imageName": "productImageSample1",
+    "title": "Wireless Earbuds",
+    "des": "True wireless earbuds with crystal-clear sound and compact charging case.",
+    "storeName": "Tech Store",
+    "starCount": 5.0
+  }
+]

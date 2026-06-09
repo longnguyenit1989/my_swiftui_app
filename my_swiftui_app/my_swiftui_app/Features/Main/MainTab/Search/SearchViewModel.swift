@@ -11,29 +11,30 @@ import Combine
 @MainActor
 final class SearchViewModel: ObservableObject {
     @Published var state = SearchState()
-
+    
     init() {
         loadCoupons()
+        loadProducts()
     }
-
+    
+    
     private func loadCoupons() {
-        guard
-            let url = Bundle.main.url(
-                forResource: "coupons",
-                withExtension: "json"
-            )
-        else {
-            return
-        }
-
         do {
-            let data = try Data(contentsOf: url)
-            let coupons = try JSONDecoder().decode(
+            state.coupons = try Bundle.main.decode(
                 [Coupon].self,
-                from: data
+                from: "coupons"
             )
-
-            state.coupons = coupons
+        } catch {
+            print(error)
+        }
+    }
+    
+    private func loadProducts() {
+        do {
+            state.products = try Bundle.main.decode(
+                [Product].self,
+                from: "products"
+            )
         } catch {
             print(error)
         }
