@@ -5,7 +5,8 @@
     "title": "ドン・キホーテ",
     "storeName": "ディスカウントストア",
     "discountText": "最大10%OFF",
-    "expirationDate": "有効期限：2025/12/01"
+    "expirationDate": "有効期限：2025/12/01",
+    "isFavorite": false
   },
   {
     "id": "2",
@@ -13,7 +14,8 @@
     "title": "ABC Store",
     "storeName": "Shopping Mall",
     "discountText": "20%OFF",
-    "expirationDate": "有効期限：2025/12/15"
+    "expirationDate": "有効期限：2025/12/15",
+    "isFavorite": false
   },
   {
     "id": "3",
@@ -21,7 +23,8 @@
     "title": "Family Mart",
     "storeName": "Convenience Store",
     "discountText": "15%OFF",
-    "expirationDate": "有効期限：2025/12/20"
+    "expirationDate": "有効期限：2025/12/20",
+    "isFavorite": false
   },
   {
     "id": "4",
@@ -29,7 +32,8 @@
     "title": "Lawson",
     "storeName": "Convenience Store",
     "discountText": "5%OFF",
-    "expirationDate": "有効期限：2025/12/25"
+    "expirationDate": "有効期限：2025/12/25",
+    "isFavorite": false
   },
   {
     "id": "5",
@@ -37,7 +41,8 @@
     "title": "Uniqlo",
     "storeName": "Fashion",
     "discountText": "30%OFF",
-    "expirationDate": "有効期限：2025/12/31"
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
   },
   {
     "id": "6",
@@ -45,7 +50,8 @@
     "title": "GU",
     "storeName": "Fashion",
     "discountText": "25%OFF",
-    "expirationDate": "有効期限：2025/12/31"
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
   },
   {
     "id": "7",
@@ -53,7 +59,8 @@
     "title": "Bic Camera",
     "storeName": "Electronics",
     "discountText": "8%OFF",
-    "expirationDate": "有効期限：2025/12/31"
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
   },
   {
     "id": "8",
@@ -61,7 +68,8 @@
     "title": "Yodobashi",
     "storeName": "Electronics",
     "discountText": "12%OFF",
-    "expirationDate": "有効期限：2025/12/31"
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
   },
   {
     "id": "9",
@@ -69,7 +77,8 @@
     "title": "Matsumoto Kiyoshi",
     "storeName": "Drug Store",
     "discountText": "10%OFF",
-    "expirationDate": "有効期限：2025/12/31"
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
   },
   {
     "id": "10",
@@ -77,6 +86,7 @@
     "title": "Sugi Pharmacy",
     "storeName": "Drug Store",
     "discountText": "7%OFF",
-    "expirationDate": "有効期限：2025/12/31"
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
   }
 ]

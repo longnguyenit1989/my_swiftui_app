@@ -21,4 +21,10 @@ extension View {
             .lineLimit(1)
             .truncationMode(.tail)
     }
+    
+    func doubleLine() -> some View {
+        self
+            .lineLimit(2)
+            .truncationMode(.tail)
+    }
 }

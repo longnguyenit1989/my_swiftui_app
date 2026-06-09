@@ -14,6 +14,8 @@ struct Coupon: Identifiable, Codable {
     let storeName: String
     let discountText: String
     let expirationDate: String
+    
+    var isFavorite: Bool
 
     init(
         id: String,
@@ -21,7 +23,8 @@ struct Coupon: Identifiable, Codable {
         title: String,
         storeName: String,
         discountText: String,
-        expirationDate: String
+        expirationDate: String,
+        isFavorite: Bool = false
     ) {
         self.id = id
         self.imageName = imageName
@@ -29,5 +32,6 @@ struct Coupon: Identifiable, Codable {
         self.storeName = storeName
         self.discountText = discountText
         self.expirationDate = expirationDate
+        self.isFavorite = isFavorite
     }
 }

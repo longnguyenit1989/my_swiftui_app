@@ -1,0 +1,73 @@
+[
+  {
+    "id": "1",
+    "imageName": "apple",
+    "title": "Apple",
+    "des": "Apple is one of the world's leading technology companies, known for designing premium consumer electronics and software. The company created iconic products such as the iPhone, iPad, Mac, and Apple Watch. Apple focuses heavily on user experience, privacy, and ecosystem integration. Its services business includes Apple Music, iCloud, and the App Store. The company operates retail stores across many countries. Apple continues to invest in innovation and sustainable business practices.",
+    "isFavorite": false
+  },
+  {
+    "id": "2",
+    "imageName": "google",
+    "title": "Google",
+    "des": "Google is a global technology company specializing in internet-related products and services. It is best known for its search engine, which processes billions of searches every day. Google also develops Android, Chrome, YouTube, and Google Cloud. The company invests heavily in artificial intelligence and machine learning technologies. Its products are used by individuals, businesses, and governments around the world. Google aims to organize the world's information and make it universally accessible.",
+    "isFavorite": false
+  },
+  {
+    "id": "3",
+    "imageName": "microsoft",
+    "title": "Microsoft",
+    "des": "Microsoft is a multinational technology company headquartered in the United States. It develops software products such as Windows, Microsoft 365, and Azure cloud services. The company has expanded into gaming through Xbox and enterprise solutions through its cloud platform. Microsoft serves millions of consumers and organizations worldwide. It continues to invest in artificial intelligence, security, and productivity tools. The company plays a major role in shaping modern computing.",
+    "isFavorite": false
+  },
+  {
+    "id": "4",
+    "imageName": "amazon",
+    "title": "Amazon",
+    "des": "Amazon started as an online bookstore and grew into one of the largest e-commerce companies in the world. It offers millions of products across numerous categories and countries. Amazon Web Services is a leading cloud computing platform used by businesses globally. The company also operates Prime Video, Kindle, and Alexa services. Amazon focuses on customer convenience, logistics efficiency, and technological innovation. Its extensive delivery network helps serve customers quickly and reliably.",
+    "isFavorite": false
+  },
+  {
+    "id": "5",
+    "imageName": "samsung",
+    "title": "Samsung",
+    "des": "Samsung is a global leader in consumer electronics, semiconductors, and mobile devices. The company manufactures smartphones, televisions, appliances, and memory chips. Samsung's Galaxy series competes among the top smartphone brands worldwide. It invests heavily in research and development to maintain technological leadership. The company operates manufacturing facilities and research centers across multiple countries. Samsung continues to expand its presence in emerging technologies and digital solutions.",
+    "isFavorite": false
+  },
+  {
+    "id": "6",
+    "imageName": "sony",
+    "title": "Sony",
+    "des": "Sony is a Japanese multinational corporation known for electronics, entertainment, and gaming products. The company produces PlayStation consoles, cameras, audio equipment, and televisions. Sony also owns major music and film businesses. Its products are recognized for quality, innovation, and design. The company serves both consumers and professional markets around the world. Sony continues to strengthen its position in gaming, content creation, and entertainment industries.",
+    "isFavorite": false
+  },
+  {
+    "id": "7",
+    "imageName": "nike",
+    "title": "Nike",
+    "des": "Nike is one of the world's largest sportswear and footwear companies. The brand designs products for athletes and everyday consumers alike. Nike sponsors major sports teams, events, and professional athletes globally. Its focus on innovation has led to advanced footwear and performance technologies. The company operates retail stores and e-commerce platforms in many countries. Nike promotes an active lifestyle through marketing, community programs, and product development.",
+    "isFavorite": false
+  },
+  {
+    "id": "8",
+    "imageName": "adidas",
+    "title": "Adidas",
+    "des": "Adidas is a leading manufacturer of athletic footwear, apparel, and accessories. The company has a strong presence in football, running, and lifestyle fashion markets. Adidas collaborates with athletes, designers, and cultural figures to create innovative products. Sustainability has become an important focus area for the company. Its products are sold through retail stores, partners, and online platforms worldwide. Adidas continues to build its reputation through performance and design excellence.",
+    "isFavorite": false
+  },
+  {
+    "id": "9",
+    "imageName": "tesla",
+    "title": "Tesla",
+    "des": "Tesla is an automotive and energy company focused on electric vehicles and sustainable energy solutions. The company designs and manufactures electric cars, battery systems, and solar products. Tesla's vehicles are known for advanced software features and over-the-air updates. The company operates charging networks in many countries to support EV adoption. It invests significantly in battery technology and autonomous driving research. Tesla aims to accelerate the world's transition to sustainable energy.",
+    "isFavorite": false
+  },
+  {
+    "id": "10",
+    "imageName": "netflix",
+    "title": "Netflix",
+    "des": "Netflix is one of the world's largest streaming entertainment services. The platform offers movies, television series, documentaries, and original productions. Netflix operates in numerous countries and serves millions of subscribers. The company invests heavily in content creation and global distribution. Its recommendation algorithms help personalize viewing experiences for users. Netflix continues to expand its entertainment offerings and digital media presence worldwide.",
+    "isFavorite": false
+  }
+]
+

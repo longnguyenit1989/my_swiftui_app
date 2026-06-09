@@ -9,16 +9,19 @@ import SwiftUI
 
 struct CouponItemView: View {
     let coupon: Coupon
+    let onFavoriteTap: () -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Image(coupon.imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(height: AppConstants.imageHeight, alignment: .center)
-                .frame(maxWidth: .infinity)
-                .padding(.horizontal, 40)
-                .padding(.vertical, 12)
+            ZStack(alignment: .topTrailing) {
+                Image(coupon.imageName).cardImageStyle()
+
+                FavoriteButton(
+                    isFavorite: coupon.isFavorite,
+                    action: onFavoriteTap
+                )
+                .padding(AppSpacing.xs)
+            }
             
             Divider().frame(height: AppConstants.borderWidth)
             
@@ -54,9 +57,9 @@ struct CouponItemView: View {
                 .stroke(AppColor.shared.border, lineWidth: AppConstants.borderWidth)
         )
         .clipShape(RoundedRectangle(cornerRadius: AppSpacing.xs))
-        .shadow(color: Color.black.opacity(0.10), radius: 8, x: 0, y: 4)
         .frame(
             width: AppConstants.cardWidth,
         )
+        .shadow(color: .black.opacity(0.08),radius: 6, x: 0, y: 3)
     }
 }

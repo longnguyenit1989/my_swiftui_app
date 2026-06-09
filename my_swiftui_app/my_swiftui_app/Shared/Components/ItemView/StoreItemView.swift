@@ -1,5 +1,5 @@
 //
-//  ProductItemView.swift
+//  StoreItemView.swift
 //  my_swiftui_app
 //
 //  Created by OPN-Macbook on 9/6/26.
@@ -7,18 +7,17 @@
 
 import SwiftUI
 
-struct ProductItemView: View {
-    let product: Product
+struct StoreItemView: View {
+    let store: Store
     let onFavoriteTap: () -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topTrailing) {
-                Image(product.imageName)
-                    .cardImageStyle()
+                Image(store.imageName).cardImageStyle()
 
                 FavoriteButton(
-                    isFavorite: product.isFavorite,
+                    isFavorite: store.isFavorite,
                     action: onFavoriteTap
                 )
                 .padding(AppSpacing.xs)
@@ -27,24 +26,16 @@ struct ProductItemView: View {
             Divider().frame(height: AppConstants.borderWidth)
             
             VStack(alignment: .leading, spacing: AppSpacing.xs) {
-                Text(product.title)
+                Text(store.title)
                     .textJp14Bold()
                     .singleLine()
                 
-                Text(product.storeName)
+                Text(store.des)
                     .textJp12(color: AppColor.shared.textTertiary)
-                    .singleLine()
-                
-                HStack {
-                    RatingBar(rating: product.starCount)
-                    Text(String(format: "%.1f", product.starCount))
-                }
+                    .doubleLine()
             }
             .padding(AppSpacing.sm)
         }
-        .frame(
-            width: AppConstants.cardWidth,
-        )
         .overlay(
             RoundedRectangle(cornerRadius: AppSpacing.xs)
                 .stroke(
@@ -52,8 +43,9 @@ struct ProductItemView: View {
                     lineWidth: AppConstants.borderWidth
                 )
         )
-        .clipShape(
-            RoundedRectangle(cornerRadius: AppSpacing.xs)
+        .clipShape(RoundedRectangle(cornerRadius: AppSpacing.xs))
+        .frame(
+            width: AppConstants.cardWidth,
         )
         .shadow(color: .black.opacity(0.08),radius: 6, x: 0, y: 3)
     }

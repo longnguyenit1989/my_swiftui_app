@@ -34,8 +34,8 @@ extension Text {
         color: Color = AppColor.shared.textPrimary
     ) -> some View {
         applyTextStyle(
-            font: AppTextStyle.jp14,
-            fontSize: AppTextStyle.jp14Size,
+            font: AppTextStyle.jp12,
+            fontSize: AppTextStyle.jp12Size,
             textColor: color
         )
     }
