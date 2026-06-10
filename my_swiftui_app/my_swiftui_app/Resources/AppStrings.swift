@@ -51,7 +51,7 @@ enum AppStrings {
     }
     
     enum Favourite {
-        
+        static let noFavourite = "noFavourite"
     }
 
     enum Profile {

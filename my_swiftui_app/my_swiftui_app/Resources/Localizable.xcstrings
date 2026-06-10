@@ -39,9 +39,6 @@
         }
       }
     },
-    "Coupon" : {
-
-    },
     "error.empty_email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -241,6 +238,23 @@
         }
       }
     },
+    "noFavourite" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No favourite"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お気に入りはなし"
+          }
+        }
+      }
+    },
     "ok" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -274,9 +288,6 @@
           }
         }
       }
-    },
-    "Product" : {
-
     },
     "profile.chooseLanguage" : {
       "extractionState" : "manual",
@@ -611,9 +622,6 @@
           }
         }
       }
-    },
-    "Store" : {
-
     },
     "verify" : {
       "extractionState" : "manual",

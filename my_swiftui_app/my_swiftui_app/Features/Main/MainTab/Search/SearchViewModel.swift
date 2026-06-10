@@ -12,6 +12,18 @@ import Combine
 final class SearchViewModel: ObservableObject {
     @Published var state = SearchState()
     
+    var favoriteProducts: [Product] {
+        state.products.filter(\.isFavorite)
+    }
+    
+    var favoriteCoupons: [Coupon] {
+        state.coupons.filter(\.isFavorite)
+    }
+    
+    var favoriteStores: [Store] {
+        state.stores.filter(\.isFavorite)
+    }
+    
     init() {
         loadCoupons()
         loadProducts()
@@ -58,13 +70,13 @@ final class SearchViewModel: ObservableObject {
                 return
             }
             state.products[index].isFavorite.toggle()
-
+            
         case .coupons:
             guard let index = state.coupons.firstIndex(where: { $0.id == id }) else {
                 return
             }
             state.coupons[index].isFavorite.toggle()
-
+            
         case .stores:
             guard let index = state.stores.firstIndex(where: { $0.id == id }) else {
                 return

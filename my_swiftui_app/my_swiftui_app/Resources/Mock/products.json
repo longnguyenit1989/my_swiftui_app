@@ -46,7 +46,7 @@
   },
   {
     "id": "6",
-    "imageName": "productImageSample3",
+    "imageName": "camera",
     "title": "4K Action Camera",
     "des": "Capture your adventures in stunning 4K resolution.",
     "storeName": "Outdoor Shop",
@@ -55,7 +55,7 @@
   },
   {
     "id": "7",
-    "imageName": "productImageSample1",
+    "imageName": "speaker",
     "title": "Portable Bluetooth Speaker",
     "des": "Enjoy rich sound and deep bass wherever you go.",
     "storeName": "Audio Center",
@@ -64,7 +64,7 @@
   },
   {
     "id": "8",
-    "imageName": "productImageSample2",
+    "imageName": "usb",
     "title": "USB-C Charging Hub",
     "des": "Multi-port charging hub compatible with laptops, tablets, and phones.",
     "storeName": "Gadget Market",
@@ -73,7 +73,7 @@
   },
   {
     "id": "9",
-    "imageName": "productImageSample3",
+    "imageName": "laptop",
     "title": "Laptop Stand",
     "des": "Adjustable aluminum laptop stand for better ergonomics.",
     "storeName": "Workspace Pro",
@@ -82,7 +82,7 @@
   },
   {
     "id": "10",
-    "imageName": "productImageSample1",
+    "imageName": "earbuds",
     "title": "Wireless Earbuds",
     "des": "True wireless earbuds with crystal-clear sound and compact charging case.",
     "storeName": "Tech Store",

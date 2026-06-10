@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @StateObject private var searchViewModel = SearchViewModel()
+    
     var body: some View {
         TabView {
             HomeView()
@@ -15,12 +17,12 @@ struct MainTabView: View {
                     Image(systemName: "house")
                     Text(AppStrings.Main.home.l10n)
                 }
-            SearchView()
+            SearchView(viewModel: searchViewModel)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text(AppStrings.Main.search.l10n)
                 }
-            FavouriteView()
+            FavouriteView(viewModel: searchViewModel)
                 .tabItem {
                     Image(systemName: "heart")
                     Text(AppStrings.Main.favourite.l10n)

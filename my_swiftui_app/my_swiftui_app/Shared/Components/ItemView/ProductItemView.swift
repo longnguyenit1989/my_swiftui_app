@@ -9,14 +9,21 @@ import SwiftUI
 
 struct ProductItemView: View {
     let product: Product
+    let width: CGFloat
     let onFavoriteTap: () -> Void
+    
+    init(product: Product, width: CGFloat = AppConstants.cardWidth, onFavoriteTap: @escaping () -> Void) {
+        self.product = product
+        self.width = width
+        self.onFavoriteTap = onFavoriteTap
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topTrailing) {
                 Image(product.imageName)
                     .cardImageStyle()
-
+                
                 FavoriteButton(
                     isFavorite: product.isFavorite,
                     action: onFavoriteTap
@@ -42,9 +49,7 @@ struct ProductItemView: View {
             }
             .padding(AppSpacing.sm)
         }
-        .frame(
-            width: AppConstants.cardWidth,
-        )
+        .frame(width: width)
         .overlay(
             RoundedRectangle(cornerRadius: AppSpacing.xs)
                 .stroke(
