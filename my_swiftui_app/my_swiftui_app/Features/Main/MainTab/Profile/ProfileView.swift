@@ -15,6 +15,10 @@ struct ProfileView: View {
     @State private var showLogoutAlert = false
     @State private var showLanguageSheet = false
     
+    @State private var showContactUs = false
+    @State private var showTerm = false
+    @State private var showPrivacy = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -33,9 +37,15 @@ struct ProfileView: View {
                     SectionItem(title: AppStrings.Profile.notification)
                         .padding(.bottom,AppSpacing.lg)
                     SectionHeader(title: AppStrings.Profile.other)
-                    SectionItem(title: AppStrings.Profile.contactUs)
-                    SectionItem(title: AppStrings.Profile.privacy)
-                    SectionItem(title: AppStrings.Profile.term)
+                    SectionItem(title: AppStrings.Profile.contactUs, action: {
+                        showContactUs = true
+                    })
+                    SectionItem(title: AppStrings.Profile.privacy, action: {
+                        showPrivacy = true
+                    })
+                    SectionItem(title: AppStrings.Profile.term, action: {
+                        showTerm = true
+                    })
                     SectionItem(title: AppStrings.Profile.license)
                     SectionItem(title: AppStrings.Profile.version,
                                 trailingText: Bundle.main.versionWithBuild,
@@ -61,6 +71,24 @@ struct ProfileView: View {
                 LanguageSheetView()
                     .presentationDetents([.height(200)])
                     .presentationDragIndicator(.visible)
+            }
+            .navigationDestination(isPresented: $showContactUs) {
+                CommonWebView(
+                    title: AppStrings.Profile.contactUs,
+                    url: AppUrls.contactUs
+                )
+            }
+            .navigationDestination(isPresented: $showTerm) {
+                CommonWebView(
+                    title: AppStrings.Profile.term,
+                    url: AppUrls.terms
+                )
+            }
+            .navigationDestination(isPresented: $showPrivacy) {
+                CommonWebView(
+                    title: AppStrings.Profile.privacy,
+                    url: AppUrls.privacy
+                )
             }
         }
     }

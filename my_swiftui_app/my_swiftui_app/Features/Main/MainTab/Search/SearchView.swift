@@ -13,7 +13,7 @@ struct SearchView: View {
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: true) {
-                VStack(spacing: 16) {
+                VStack(spacing: AppSpacing.md) {
                     SectionAndContent(title: AppStrings.Common.product, action: {
                         
                     }) {
