@@ -4,6 +4,57 @@
     "" : {
 
     },
+    "bags" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bags"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "バッグ"
+          }
+        }
+      }
+    },
+    "beauty" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beauty"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "美容"
+          }
+        }
+      }
+    },
+    "books" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Books"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本"
+          }
+        }
+      }
+    },
     "cancel" : {
       "comment" : "Cancel",
       "extractionState" : "manual",
@@ -22,6 +73,57 @@
         }
       }
     },
+    "category" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Category"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カテゴリ"
+          }
+        }
+      }
+    },
+    "closing_in" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closing in:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "迫り来る："
+          }
+        }
+      }
+    },
+    "clothes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clothes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "衣類"
+          }
+        }
+      }
+    },
     "coupon" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -35,6 +137,24 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "クーポン"
+          }
+        }
+      }
+    },
+    "electronics" : {
+      "comment" : "家電",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Electronics"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "家電"
           }
         }
       }
@@ -114,6 +234,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "お気に入り"
+          }
+        }
+      }
+    },
+    "flash_sale" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flash Sale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フラッシュセール"
+          }
+        }
+      }
+    },
+    "furniture" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Furniture"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "家具"
           }
         }
       }
@@ -555,6 +709,23 @@
         }
       }
     },
+    "shoes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shoes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "靴"
+          }
+        }
+      }
+    },
     "sign_in.email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -606,6 +777,23 @@
         }
       }
     },
+    "sports" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sports"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "スポーツ"
+          }
+        }
+      }
+    },
     "store" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -619,6 +807,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "格納"
+          }
+        }
+      }
+    },
+    "toys" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toys"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おもちゃ"
           }
         }
       }
@@ -721,6 +926,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "認証コードを再送信"
+          }
+        }
+      }
+    },
+    "watches" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watches"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "腕時計"
           }
         }
       }

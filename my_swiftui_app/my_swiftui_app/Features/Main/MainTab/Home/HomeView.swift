@@ -9,16 +9,35 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var session: SessionManager
-
+    
+    @StateObject private var viewModel = HomeViewModel()
+    
     var body: some View {
         NavigationStack {
-            VStack(spacing: AppSpacing.xl) {
-                Spacer()
-                Text(AppStrings.Home.welcome.l10n)
-                    .textJp14Bold()
-                    .scaleEffect(1.5)
-                Spacer()
+            ScrollView(showsIndicators: true) {
+                VStack(spacing: AppSpacing.lg) {
+                    BannerCarouselView(height: AppConstants.bannerHeight)
+                        .padding(.bottom, AppSpacing.sm)
+                    
+                    SectionAndContent(title: AppStrings.Home.category, action: {
+                        
+                    }) {
+                        HorizontalSection(items: viewModel.state.categories, spacing: AppSpacing.lg) {category in
+                            CategoryItemView(category: category)
+                                .onTapGesture {
+                                    viewModel.selectCategory(id: category.id)
+                                }
+                        }
+                    }
+                    
+                    HStack() {
+                        Text(AppStrings.Home.flashSale.l10n).textJp16Bold()
+                        Spacer()
+                        CountdownView(initialSeconds: 60*2*60)
+                    }
+                }
             }
+            
             .padding()
             .navigationTitle(Text(AppStrings.Main.home.l10n))
             .navigationBarTitleDisplayMode(.inline)

@@ -10,12 +10,12 @@ import SwiftUI
 struct SectionAndContent<Content: View>: View {
     let title: String
     let action: (() -> Void)?
-    let content: Content
+    let content: Content?
 
     init(
         title: String,
         action: (() -> Void)? = nil,
-        content: () -> Content
+        content: () -> Content?
     ) {
         self.title = title
         self.action = action
@@ -28,7 +28,6 @@ struct SectionAndContent<Content: View>: View {
                 title: title,
                 action: action
             )
-
             content
         }
     }

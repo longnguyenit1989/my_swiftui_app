@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct HomeState {
+struct MainState {
     // Put any home view states here when needed in the future
 }

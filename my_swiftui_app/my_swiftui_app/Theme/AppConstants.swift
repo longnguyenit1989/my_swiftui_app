@@ -13,6 +13,13 @@ enum AppConstants {
     static let imageHeight: CGFloat = 80
     
     static let cardWidth: CGFloat = 180
+    
+    static let bannerHeight: CGFloat = 180
+    
+    static let iconButtonSize: CGFloat = 32
+    static let iconIndicatorSize: CGFloat = 8
+    
+    static let iconCategorySize: CGFloat = 60
 }
 
 enum AppUrls {

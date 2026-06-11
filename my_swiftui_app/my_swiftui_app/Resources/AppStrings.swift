@@ -48,6 +48,19 @@ enum AppStrings {
     
     enum Home {
         static let welcome = "home.welcome"
+        static let closingIn = "closing_in"
+        static let category = "category"
+        static let flashSale = "flash_sale"
+        static let clothes = "clothes"
+        static let electronics = "electronics"
+        static let watches = "watches"
+        static let shoes = "shoes"
+        static let bags = "bags"
+        static let beauty = "beauty"
+        static let sports = "sports"
+        static let books = "books"
+        static let furniture = "furniture"
+        static let toys = "toys"
     }
     
     enum Favourite {

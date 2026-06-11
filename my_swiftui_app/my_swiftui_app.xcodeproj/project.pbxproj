@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB4C13682FDA73A00079E036 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = FB4C13672FDA73A00079E036 /* SwiftUIPager */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FB50D8B62FD032EA00E1B6F9 /* my_swiftui_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_swiftui_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4C13682FDA73A00079E036 /* SwiftUIPager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = my_swiftui_app;
 			packageProductDependencies = (
+				FB4C13672FDA73A00079E036 /* SwiftUIPager */,
 			);
 			productName = my_swiftui_app;
 			productReference = FB50D8B62FD032EA00E1B6F9 /* my_swiftui_app.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = FB50D8AD2FD032EA00E1B6F9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FB4C13662FDA739F0079E036 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FB50D8B72FD032EA00E1B6F9 /* Products */;
 			projectDirPath = "";
@@ -343,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB4C13662FDA739F0079E036 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB4C13672FDA73A00079E036 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB4C13662FDA739F0079E036 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB50D8AE2FD032EA00E1B6F9 /* Project object */;
 }
