@@ -15,9 +15,9 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: true) {
-                VStack(spacing: AppSpacing.lg) {
+                VStack(spacing: AppSpacing.paddingItemLarge) {
                     BannerCarouselView(height: AppConstants.bannerHeight)
-                        .padding(.bottom, AppSpacing.sm)
+                        .padding(.bottom, AppSpacing.contentBottom)
                     
                     SectionAndContent(title: AppStrings.Home.category, action: {
                         

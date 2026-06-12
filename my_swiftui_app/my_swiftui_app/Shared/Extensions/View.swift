@@ -27,4 +27,8 @@ extension View {
             .lineLimit(2)
             .truncationMode(.tail)
     }
+    
+    func hideBottomBar() -> some View {
+        toolbar(.hidden, for: .tabBar)
+    }
 }

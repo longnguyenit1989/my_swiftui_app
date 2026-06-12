@@ -14,7 +14,7 @@ struct HorizontalSection<Item: Identifiable, Content: View>: View {
 
     init(
         items: [Item],
-        spacing: CGFloat = AppSpacing.sm,
+        spacing: CGFloat = AppSpacing.paddingItem,
         @ViewBuilder content: @escaping (Item) -> Content
     ) {
         self.items = items

@@ -21,10 +21,10 @@ struct VerifyOtpView: View {
             
             Text(AppStrings.VerifyOtp.enterVerificationCode.l10n)
                 .textJp14()
-                .padding(.bottom, AppSpacing.lg)
+                .padding(.bottom, AppSpacing.contentBottom)
             
             OTPDigitBox(otp: $otp)
-                .padding(.bottom, AppSpacing.lg)
+                .padding(.bottom, AppSpacing.contentBottom)
             
             PrimaryButtonView(
                 text: AppStrings.VerifyOtp.verify,
@@ -35,14 +35,13 @@ struct VerifyOtpView: View {
                     session.login(email: email)
                 }
             }
-            .padding(.bottom, AppSpacing.lg)
+            .padding(.bottom, AppConstants.radiusButton)
             
             Button {
                 showToast(AppStrings.VerifyOtp.resendCode)
             } label: {
                 Text(AppStrings.VerifyOtp.resendCode.l10n).textJp14Underlined()
             }
-            .padding(.bottom, AppSpacing.sm)
             
             Button {
                 showToast(AppStrings.VerifyOtp.changeVerificationEmail)

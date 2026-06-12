@@ -21,8 +21,8 @@ struct PrimaryButtonView: View {
         text: String,
         backgroundColor: Color = AppColor.shared.primary,
         foregroundColor: Color = .white,
-        size: CGFloat = 18,
-        height: CGFloat = 55,
+        size: CGFloat = AppSpacing.md,
+        height: CGFloat = AppConstants.buttonHeight,
         isDisabled: Bool = false,
         action: @escaping () async -> Void
     ) {
@@ -47,7 +47,7 @@ struct PrimaryButtonView: View {
                     .frame(maxWidth: .infinity)
                     .frame(height: height)
                     .background(isDisabled ? Color.gray.opacity(0.4) : backgroundColor)
-                    .clipShape(Capsule())
+                    .cornerRadius(AppConstants.radiusButton)
             }
             .disabled(isDisabled)
         }

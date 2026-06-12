@@ -11,11 +11,18 @@ struct ProductItemView: View {
     let product: Product
     let width: CGFloat
     let onFavoriteTap: () -> Void
+    let onItemTap: ((Product) -> Void)?
     
-    init(product: Product, width: CGFloat = AppConstants.cardWidth, onFavoriteTap: @escaping () -> Void) {
+    init(
+        product: Product,
+        width: CGFloat = AppConstants.cardWidth,
+        onFavoriteTap: @escaping () -> Void,
+        onItemTap: ((Product) -> Void)? = nil,)
+    {
         self.product = product
         self.width = width
         self.onFavoriteTap = onFavoriteTap
+        self.onItemTap = onItemTap
     }
     
     var body: some View {
@@ -38,9 +45,18 @@ struct ProductItemView: View {
                     .textJp14Bold()
                     .singleLine()
                 
-                Text(product.storeName)
-                    .textJp12(color: AppColor.shared.textTertiary)
-                    .singleLine()
+                HStack(spacing: 0) {
+                    Text(product.storeName)
+                        .textJp12(color: AppColor.shared.textTertiary)
+                        .singleLine()
+                    
+                    Spacer()
+                    
+                    Text("\(product.price)$")
+                        .textJp14(color: AppColor.shared.primary)
+                        .singleLine()
+                }
+          
                 
                 HStack {
                     RatingBar(rating: product.starCount)
@@ -61,5 +77,8 @@ struct ProductItemView: View {
             RoundedRectangle(cornerRadius: AppSpacing.xs)
         )
         .shadow(color: .black.opacity(0.08),radius: 6, x: 0, y: 3)
+        .onTapGesture {
+            onItemTap?(self.product)
+        }
     }
 }

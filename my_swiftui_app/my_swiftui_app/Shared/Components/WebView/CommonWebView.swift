@@ -15,6 +15,6 @@ struct CommonWebView: View {
         AppWebView(url: url)
             .navigationTitle(title.l10n)
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar(.hidden, for: .tabBar)
+            .hideBottomBar()
     }
 }

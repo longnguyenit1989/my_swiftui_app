@@ -26,7 +26,7 @@ struct ProfileView: View {
                     SectionHeader(title: AppStrings.Profile.editProfile)
                     SectionItem(title: AppStrings.Profile.editAccount)
                     SectionItem(title: AppStrings.Profile.deleteAccount)
-                        .padding(.bottom,AppSpacing.lg)
+                        .padding(.bottom,AppSpacing.contentBottom)
                     SectionHeader(title: AppStrings.Profile.setting)
                     SectionItem(
                         title: AppStrings.Profile.language,
@@ -35,7 +35,7 @@ struct ProfileView: View {
                         },
                         trailingText: languageManager.currentLanguage.displayName)
                     SectionItem(title: AppStrings.Profile.notification)
-                        .padding(.bottom,AppSpacing.lg)
+                        .padding(.bottom,AppSpacing.contentBottom)
                     SectionHeader(title: AppStrings.Profile.other)
                     SectionItem(title: AppStrings.Profile.contactUs, action: {
                         showContactUs = true
@@ -50,7 +50,7 @@ struct ProfileView: View {
                     SectionItem(title: AppStrings.Profile.version,
                                 trailingText: Bundle.main.versionWithBuild,
                                 hideChevron: true)
-                    .padding(.bottom,AppSpacing.lg)
+                    .padding(.bottom,AppSpacing.contentBottom)
                     PrimaryButtonView(text: AppStrings.Profile.logout) {
                         showLogoutAlert = true
                     }

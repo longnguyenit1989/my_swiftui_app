@@ -4,6 +4,32 @@
     "" : {
 
     },
+    " %lld" : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld$" : {
+
+    },
+    "add_to_cart" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to cart"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カートに追加"
+          }
+        }
+      }
+    },
     "bags" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -227,17 +253,6 @@
         }
       }
     },
-    "Favourite" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "お気に入り"
-          }
-        }
-      }
-    },
     "flash_sale" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -426,6 +441,23 @@
         }
       }
     },
+    "price" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "価格:"
+          }
+        }
+      }
+    },
     "product" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -439,6 +471,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "製品"
+          }
+        }
+      }
+    },
+    "product_detail" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product Detail"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "製品詳細"
           }
         }
       }
@@ -698,13 +747,19 @@
         }
       }
     },
-    "Search" : {
-      "extractionState" : "stale",
+    "quantity" : {
+      "extractionState" : "manual",
       "localizations" : {
-        "ja" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "検索"
+            "value" : "Quantity:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "数量:"
           }
         }
       }
@@ -943,23 +998,6 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "腕時計"
-          }
-        }
-      }
-    },
-    "Welcome Home!" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Welcome home !"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "おかえりなさい！"
           }
         }
       }

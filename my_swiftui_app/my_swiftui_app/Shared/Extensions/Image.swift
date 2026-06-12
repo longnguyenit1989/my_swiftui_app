@@ -8,11 +8,11 @@
 import SwiftUI
 
 extension Image {
-    func cardImageStyle() -> some View {
+    func cardImageStyle(height: CGFloat = AppConstants.imageItemHeight) -> some View {
         self
             .resizable()
             .scaledToFit()
-            .frame(height: AppConstants.imageHeight)
+            .frame(height: height)
             .padding(.horizontal, AppSpacing.sm)
             .padding(.vertical, AppSpacing.sm)
             .frame(maxWidth: .infinity)

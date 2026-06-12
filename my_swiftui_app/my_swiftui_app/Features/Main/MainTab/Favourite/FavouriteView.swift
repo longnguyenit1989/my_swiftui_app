@@ -138,7 +138,7 @@ struct FavouriteView: View {
             ScrollView {
                 LazyVGrid(
                     columns: columns,
-                    spacing: AppSpacing.xs
+                    spacing: AppSpacing.paddingItem
                 ) {
                     ForEach(items) { item in
                         content(item)

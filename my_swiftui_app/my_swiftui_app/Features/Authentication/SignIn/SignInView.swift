@@ -14,13 +14,13 @@ struct SignInView: View {
         NavigationStack {
             VStack {
                 LogoApp()
-                    .padding(.bottom, AppSpacing.xl)
+                    .padding(.bottom, AppSpacing.contentBottomLarge)
 
                 CustomTextFieldView(
                     title: AppStrings.SignIn.emailPlaceholder,
                     text: $viewModel.state.email
                 )
-                .padding(.bottom, AppSpacing.xl)
+                .padding(.bottom, AppSpacing.contentBottomLarge)
 
                 PrimaryButtonView(
                     text: AppStrings.SignIn.sendCode,

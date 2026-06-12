@@ -89,4 +89,11 @@ enum AppStrings {
         static let english = "languageSheet.english"
         static let japanese = "languageSheet.japanese"
     }
+    
+    enum ProductDetail {
+        static let title = "product_detail"
+        static let price = "price"
+        static let addToCart = "add_to_cart"
+        static let quantity = "quantity"
+    }
 }

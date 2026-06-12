@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel
+    @State private var selectedProduct: Product?
     
     var body: some View {
         NavigationStack {
@@ -22,6 +23,9 @@ struct SearchView: View {
                                 product: product,
                                 onFavoriteTap: {
                                     viewModel.toggleFavorite(id: product.id, type: .products)
+                                },
+                                onItemTap: {product in
+                                    selectedProduct = product
                                 }
                             )
                         }
@@ -57,6 +61,11 @@ struct SearchView: View {
             .padding()
             .navigationTitle(Text(AppStrings.Main.search.l10n))
             .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(item: $selectedProduct) { selectedProduct in
+                ProductDetailView(viewModel: self.viewModel,
+                                  productId: selectedProduct.id,
+                )
+            }
         }
     }
 }

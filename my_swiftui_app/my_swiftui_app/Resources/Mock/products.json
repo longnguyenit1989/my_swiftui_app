@@ -2,6 +2,7 @@
   {
     "id": "1",
     "imageName": "headphone",
+    "price": 45,
     "title": "Wireless Bluetooth Headphones",
     "des": "High-quality wireless headphones with noise cancellation and long battery life.",
     "storeName": "Tech Store",
@@ -11,6 +12,7 @@
   {
     "id": "2",
     "imageName": "smartWatch",
+    "price": 15,
     "title": "Smart Fitness Watch",
     "des": "Track your daily activity, heart rate, and sleep with this smart fitness watch.",
     "storeName": "Fit World",
@@ -20,6 +22,7 @@
   {
     "id": "3",
     "imageName": "portableBank",
+    "price": 49,
     "title": "Portable Power Bank",
     "des": "Compact and powerful power bank with fast charging support.",
     "storeName": "Mobile Hub",
@@ -29,6 +32,7 @@
   {
     "id": "4",
     "imageName": "gamingMechanicalKeyboard",
+    "price": 36,
     "title": "Gaming Mechanical Keyboard",
     "des": "Mechanical keyboard with RGB lighting and tactile switches.",
     "storeName": "Gaming Zone",
@@ -38,6 +42,7 @@
   {
     "id": "5",
     "imageName": "wirelessMouse",
+    "price": 36,
     "title": "Wireless Mouse",
     "des": "Ergonomic wireless mouse designed for productivity and comfort.",
     "storeName": "Office Supply",
@@ -47,6 +52,7 @@
   {
     "id": "6",
     "imageName": "camera",
+    "price": 23,
     "title": "4K Action Camera",
     "des": "Capture your adventures in stunning 4K resolution.",
     "storeName": "Outdoor Shop",
@@ -56,6 +62,7 @@
   {
     "id": "7",
     "imageName": "speaker",
+    "price": 136,
     "title": "Portable Bluetooth Speaker",
     "des": "Enjoy rich sound and deep bass wherever you go.",
     "storeName": "Audio Center",
@@ -65,6 +72,7 @@
   {
     "id": "8",
     "imageName": "usb",
+    "price": 39,
     "title": "USB-C Charging Hub",
     "des": "Multi-port charging hub compatible with laptops, tablets, and phones.",
     "storeName": "Gadget Market",
@@ -74,6 +82,7 @@
   {
     "id": "9",
     "imageName": "laptop",
+    "price": 236,
     "title": "Laptop Stand",
     "des": "Adjustable aluminum laptop stand for better ergonomics.",
     "storeName": "Workspace Pro",
@@ -83,6 +92,7 @@
   {
     "id": "10",
     "imageName": "earbuds",
+    "price": 26,
     "title": "Wireless Earbuds",
     "des": "True wireless earbuds with crystal-clear sound and compact charging case.",
     "storeName": "Tech Store",
