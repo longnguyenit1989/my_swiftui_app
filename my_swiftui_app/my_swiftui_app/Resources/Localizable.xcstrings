@@ -424,6 +424,29 @@
         }
       }
     },
+    "Notification %lld" : {
+
+    },
+    "notifications" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "通知"
+          }
+        }
+      }
+    },
+    "Notifications" : {
+
+    },
     "ok" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -865,6 +888,9 @@
           }
         }
       }
+    },
+    "This is notification content %lld" : {
+
     },
     "toys" : {
       "extractionState" : "manual",

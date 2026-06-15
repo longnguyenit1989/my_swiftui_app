@@ -96,4 +96,8 @@ enum AppStrings {
         static let addToCart = "add_to_cart"
         static let quantity = "quantity"
     }
+    
+    enum Notifications {
+        static let notifications = "notifications"
+    }
 }

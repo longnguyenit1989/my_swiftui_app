@@ -11,7 +11,7 @@ struct HomeView: View {
     @EnvironmentObject private var session: SessionManager
     
     @StateObject private var viewModel = HomeViewModel()
-    
+        
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: true) {
@@ -41,6 +41,17 @@ struct HomeView: View {
             .padding()
             .navigationTitle(Text(AppStrings.Main.home.l10n))
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        NotificationListView()
+                    } label: {
+                        NotificationButton(
+                            unreadCount: 15
+                        )
+                    }
+                }
+            }
         }
     }
 }
