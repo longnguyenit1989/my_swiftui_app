@@ -185,6 +185,23 @@
         }
       }
     },
+    "error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "エラー"
+          }
+        }
+      }
+    },
     "error.empty_email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -511,6 +528,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "製品詳細"
+          }
+        }
+      }
+    },
+    "products" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Products"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "製品"
           }
         }
       }

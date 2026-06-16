@@ -12,6 +12,10 @@ import Combine
 final class SearchViewModel: ObservableObject {
     @Published var state = SearchState()
     
+    private let productRepository: ProductRepository = ProductRepositoryImpl()
+    private let storeRepository: StoreRepository = StoreRepositoryImpl()
+    private let couponRepository: CouponRepository = CouponRepositoryImpl()
+    
     var favoriteProducts: [Product] {
         state.products.filter(\.isFavorite)
     }
@@ -25,28 +29,24 @@ final class SearchViewModel: ObservableObject {
     }
     
     init() {
-        loadCoupons()
-        loadProducts()
-        loadStores()
+        Task {
+            await loadProducts()
+            loadCoupons()
+            loadStores()
+        }
     }
     
     private func loadCoupons() {
         do {
-            state.coupons = try Bundle.main.decode(
-                [Coupon].self,
-                from: "coupons"
-            )
+            state.coupons = try couponRepository.getCoupons()
         } catch {
             print(error)
         }
     }
     
-    private func loadProducts() {
+    private func loadProducts() async {
         do {
-            state.products = try Bundle.main.decode(
-                [Product].self,
-                from: "products"
-            )
+            state.products = try await productRepository.getProducts(page: 1)
         } catch {
             print(error)
         }
@@ -54,22 +54,21 @@ final class SearchViewModel: ObservableObject {
     
     private func loadStores() {
         do {
-            state.stores = try Bundle.main.decode(
-                [Store].self,
-                from: "stores"
-            )
+            state.stores = try storeRepository.getStores()
         } catch {
             print(error)
         }
     }
     
-    func toggleFavorite(id: String, type: FavoriteType) {
+    func toggleFavorite(id: String, type: FavoriteType, fallbackProduct: Product? = nil) {
         switch type {
         case .products:
-            guard let index = state.products.firstIndex(where: { $0.id == id }) else {
-                return
+            if let index = state.products.firstIndex(where: { $0.id == id }) {
+                state.products[index].isFavorite.toggle()
+            } else if var product = fallbackProduct {
+                product.isFavorite.toggle()
+                state.products.append(product)
             }
-            state.products[index].isFavorite.toggle()
             
         case .coupons:
             guard let index = state.coupons.firstIndex(where: { $0.id == id }) else {

@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ProductItemView: View {
     let product: Product
-    let width: CGFloat
+    let width: CGFloat?
     let onFavoriteTap: () -> Void
     let onItemTap: ((Product) -> Void)?
+    var showFavourite: Bool
     
     init(
         product: Product,
-        width: CGFloat = AppConstants.cardWidth,
+        width: CGFloat? = AppConstants.cardWidth,
+        showFavourite: Bool = true,
         onFavoriteTap: @escaping () -> Void,
         onItemTap: ((Product) -> Void)? = nil,)
     {
@@ -23,6 +25,7 @@ struct ProductItemView: View {
         self.width = width
         self.onFavoriteTap = onFavoriteTap
         self.onItemTap = onItemTap
+        self.showFavourite = showFavourite
     }
     
     var body: some View {
@@ -31,11 +34,13 @@ struct ProductItemView: View {
                 Image(product.imageName)
                     .cardImageStyle()
                 
-                FavoriteButton(
-                    isFavorite: product.isFavorite,
-                    action: onFavoriteTap
-                )
-                .padding(AppSpacing.xs)
+                if showFavourite {
+                    FavoriteButton(
+                        isFavorite: product.isFavorite,
+                        action: onFavoriteTap
+                    )
+                    .padding(AppSpacing.xs)
+                }
             }
             
             Divider().frame(height: AppConstants.borderWidth)
@@ -56,7 +61,7 @@ struct ProductItemView: View {
                         .textJp14(color: AppColor.shared.primary)
                         .singleLine()
                 }
-          
+                
                 
                 HStack {
                     RatingBar(rating: product.starCount)
@@ -65,6 +70,9 @@ struct ProductItemView: View {
             }
             .padding(AppSpacing.sm)
         }
+        .frame(
+            maxWidth: width == nil ? .infinity : nil
+        )
         .frame(width: width)
         .overlay(
             RoundedRectangle(cornerRadius: AppSpacing.xs)

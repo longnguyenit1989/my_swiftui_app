@@ -9,19 +9,17 @@ import SwiftUI
 
 struct SignInView: View {
     @StateObject private var viewModel = SignInViewModel()
-
+    
     var body: some View {
         NavigationStack {
             VStack {
-                LogoApp()
-                    .padding(.bottom, AppSpacing.contentBottomLarge)
-
+                LogoApp().padding(.bottom, AppSpacing.contentBottomLarge)
+                
                 CustomTextFieldView(
                     title: AppStrings.SignIn.emailPlaceholder,
                     text: $viewModel.state.email
-                )
-                .padding(.bottom, AppSpacing.contentBottomLarge)
-
+                ).padding(.bottom, AppSpacing.contentBottomLarge)
+                
                 PrimaryButtonView(
                     text: AppStrings.SignIn.sendCode,
                     isDisabled: viewModel.state.email.isEmpty
@@ -31,7 +29,7 @@ struct SignInView: View {
             }
             .padding()
             .appContainer($viewModel.viewState)
-
+            
             .navigationDestination(
                 isPresented: $viewModel.state.isLoginSuccess
             ) {

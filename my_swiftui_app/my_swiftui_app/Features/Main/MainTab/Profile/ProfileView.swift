@@ -50,7 +50,8 @@ struct ProfileView: View {
                     SectionItem(title: AppStrings.Profile.version,
                                 trailingText: Bundle.main.versionWithBuild,
                                 hideChevron: true)
-                    .padding(.bottom,AppSpacing.contentBottom)
+                    .padding(.bottom,AppSpacing.xl)
+                    
                     PrimaryButtonView(text: AppStrings.Profile.logout) {
                         showLogoutAlert = true
                     }

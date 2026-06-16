@@ -12,11 +12,18 @@ struct ProductDetailView: View {
     @State private var quantity = 1
     
     let productId: String
+    let fallbackProduct: Product?
+    
+    init(viewModel: SearchViewModel, productId: String, fallbackProduct: Product? = nil) {
+        self.viewModel = viewModel
+        self.productId = productId
+        self.fallbackProduct = fallbackProduct
+    }
     
     private var product: Product? {
         viewModel.state.products.first {
             $0.id == productId
-        }
+        } ?? fallbackProduct
     }
     
     var body: some View {
@@ -42,7 +49,8 @@ struct ProductDetailView: View {
                             action: {
                                 viewModel.toggleFavorite(
                                     id: product.id,
-                                    type: .products
+                                    type: .products,
+                                    fallbackProduct: product
                                 )
                             }
                         )

@@ -1,0 +1,52 @@
+[
+    {
+        "id": "11",
+        "imageName": "monitor",
+        "price": 189,
+        "title": "27-inch IPS Monitor",
+        "des": "Full HD IPS monitor with vibrant colors and ultra-thin bezels.",
+        "storeName": "Display World",
+        "starCount": 5.0,
+        "isFavorite": false
+    },
+    {
+        "id": "12",
+        "imageName": "tablet",
+        "price": 299,
+        "title": "Android Tablet",
+        "des": "Lightweight tablet perfect for entertainment, reading, and productivity.",
+        "storeName": "Digital Plaza",
+        "starCount": 4.0,
+        "isFavorite": false
+    },
+    {
+        "id": "13",
+        "imageName": "router",
+        "price": 79,
+        "title": "Wi-Fi 6 Router",
+        "des": "High-speed wireless router with wide coverage and stable connectivity.",
+        "storeName": "Network Solutions",
+        "starCount": 5.0,
+        "isFavorite": false
+    },
+    {
+        "id": "14",
+        "imageName": "microphone",
+        "price": 59,
+        "title": "USB Condenser Microphone",
+        "des": "Professional microphone for streaming, podcasting, and online meetings.",
+        "storeName": "Creator Studio",
+        "starCount": 4.0,
+        "isFavorite": false
+    },
+    {
+        "id": "15",
+        "imageName": "drone",
+        "price": 349,
+        "title": "Mini Camera Drone",
+        "des": "Compact drone with HD camera, GPS positioning, and easy controls.",
+        "storeName": "Sky Tech",
+        "starCount": 5.0,
+        "isFavorite": false
+    }
+]

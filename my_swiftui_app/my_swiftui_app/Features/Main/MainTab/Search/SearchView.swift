@@ -9,14 +9,16 @@ import SwiftUI
 
 struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel
+    
     @State private var selectedProduct: Product?
+    @State private var showProducts: Bool = false
     
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: true) {
                 VStack(spacing: AppSpacing.md) {
                     SectionAndContent(title: AppStrings.Common.product, action: {
-                        
+                        showProducts = true
                     }) {
                         HorizontalSection(items: viewModel.state.products) { product in
                             ProductItemView(
@@ -24,7 +26,7 @@ struct SearchView: View {
                                 onFavoriteTap: {
                                     viewModel.toggleFavorite(id: product.id, type: .products)
                                 },
-                                onItemTap: {product in
+                                onItemTap: { product in
                                     selectedProduct = product
                                 }
                             )
@@ -61,10 +63,11 @@ struct SearchView: View {
             .padding()
             .navigationTitle(Text(AppStrings.Main.search.l10n))
             .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(item: $selectedProduct) { selectedProduct in
-                ProductDetailView(viewModel: self.viewModel,
-                                  productId: selectedProduct.id,
-                )
+            .navigationDestination(item: $selectedProduct) { product in
+                ProductDetailView(viewModel: self.viewModel, productId: product.id, fallbackProduct: product)
+            }
+            .navigationDestination(isPresented: $showProducts) {
+                ProductListView(searchViewModel: viewModel)
             }
         }
     }

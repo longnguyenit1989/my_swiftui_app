@@ -12,6 +12,16 @@ extension View {
         modifier(AppContainerModifier(viewState: viewState))
     }
     
+    func pagingLoading(
+        isLoading: Bool
+    ) -> some View {
+        overlay {
+            if isLoading {
+                ProgressView().tint(AppColor.shared.gray)
+            }
+        }
+    }
+    
     func toast(_ message: Binding<String?>) -> some View {
         self.modifier(ToastModifier(message: message))
     }

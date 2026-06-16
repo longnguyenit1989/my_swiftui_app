@@ -24,6 +24,7 @@ final class AppColor {
     let primaryMuted = Color("#D03236").opacity(0.7)
     
     let textTertiary = Color("#8C959F")
+    let gray = Color.gray
 
     private init() {}
 }

@@ -14,21 +14,12 @@
 		FB50D8B62FD032EA00E1B6F9 /* my_swiftui_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_swiftui_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FB4C13882FDF99610079E036 /* Exceptions for "my_swiftui_app" folder in "my_swiftui_app" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"my-swiftui-app-Info.plist",
-			);
-			target = FB50D8B52FD032EA00E1B6F9 /* my_swiftui_app */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 		FBDD7A9A2FD7BFD000EB7075 /* Exceptions for "my_swiftui_app" folder in "Compile Sources" phase from "my_swiftui_app" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = FB50D8B22FD032EA00E1B6F9 /* Sources */;
 			membershipExceptions = (
+				Resources/Mock/products_1.json,
 				Resources/Mock/products.json,
 			);
 		};
@@ -38,7 +29,6 @@
 		FB50D8B82FD032EA00E1B6F9 /* my_swiftui_app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				FB4C13882FDF99610079E036 /* Exceptions for "my_swiftui_app" folder in "my_swiftui_app" target */,
 				FBDD7A9A2FD7BFD000EB7075 /* Exceptions for "my_swiftui_app" folder in "Compile Sources" phase from "my_swiftui_app" target */,
 			);
 			path = my_swiftui_app;

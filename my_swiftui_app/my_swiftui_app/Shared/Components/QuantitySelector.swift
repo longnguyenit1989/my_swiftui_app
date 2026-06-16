@@ -44,10 +44,5 @@ struct QuantitySelector: View {
                 )
             )
         }
-        
-        .onAppear {
-            print(Locale.current.language.languageCode?.identifier ?? "")
-            print(AppStrings.ProductDetail.quantity.localized)
-        }
     }
 }

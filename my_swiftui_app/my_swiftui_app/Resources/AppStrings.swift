@@ -17,6 +17,7 @@ enum AppStrings {
     }
 
     enum Error {
+        static let error = "error"
         static let invalidEmail = "error.invalid_email"
         static let emptyEmail = "error.empty_email"
         static let signInError = "sign_in.error"
@@ -95,6 +96,10 @@ enum AppStrings {
         static let price = "price"
         static let addToCart = "add_to_cart"
         static let quantity = "quantity"
+    }
+    
+    enum Products {
+        static let products = "products"
     }
     
     enum Notifications {
