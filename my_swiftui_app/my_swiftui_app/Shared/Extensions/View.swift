@@ -12,9 +12,7 @@ extension View {
         modifier(AppContainerModifier(viewState: viewState))
     }
     
-    func pagingLoading(
-        isLoading: Bool
-    ) -> some View {
+    func pagingLoading(isLoading: Bool) -> some View {
         overlay {
             if isLoading {
                 ProgressView().tint(AppColor.shared.gray)

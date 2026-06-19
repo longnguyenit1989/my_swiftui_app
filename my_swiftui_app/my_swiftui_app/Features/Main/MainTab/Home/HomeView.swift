@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject private var session: SessionManager
-    
     @StateObject private var viewModel = HomeViewModel()
-        
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: true) {

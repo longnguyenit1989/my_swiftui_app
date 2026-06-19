@@ -74,6 +74,7 @@
 				FB50D8B22FD032EA00E1B6F9 /* Sources */,
 				FB50D8B32FD032EA00E1B6F9 /* Frameworks */,
 				FB50D8B42FD032EA00E1B6F9 /* Resources */,
+				FBAA00012FD400000079E036 /* Copy Package.resolved */,
 			);
 			buildRules = (
 			);
@@ -136,6 +137,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FBAA00012FD400000079E036 /* Copy Package.resolved */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT_NAME).xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved",
+			);
+			name = "Copy Package.resolved";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(PRODUCT_NAME).app/Package.resolved",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Package.resolved\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB50D8B22FD032EA00E1B6F9 /* Sources */ = {

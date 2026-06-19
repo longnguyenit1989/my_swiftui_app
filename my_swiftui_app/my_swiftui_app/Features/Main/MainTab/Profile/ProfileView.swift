@@ -18,6 +18,7 @@ struct ProfileView: View {
     @State private var showContactUs = false
     @State private var showTerm = false
     @State private var showPrivacy = false
+    @State private var showLicense = false
     
     var body: some View {
         NavigationStack {
@@ -46,7 +47,9 @@ struct ProfileView: View {
                     SectionItem(title: AppStrings.Profile.term, action: {
                         showTerm = true
                     })
-                    SectionItem(title: AppStrings.Profile.license)
+                    SectionItem(title: AppStrings.Profile.license, action: {
+                        showLicense = true
+                    })
                     SectionItem(title: AppStrings.Profile.version,
                                 trailingText: Bundle.main.versionWithBuild,
                                 hideChevron: true)
@@ -90,6 +93,9 @@ struct ProfileView: View {
                     title: AppStrings.Profile.privacy,
                     url: AppUrls.privacy
                 )
+            }
+            .navigationDestination(isPresented: $showLicense) {
+                LicenseListView()
             }
         }
     }
