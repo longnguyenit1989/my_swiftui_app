@@ -13,12 +13,16 @@ extension String {
         let pattern = #"^\S+@\S+\.\S+$"#
         return self.range(of: pattern, options: .regularExpression) != nil
     }
-    
+
     var l10n: LocalizedStringKey {
         LocalizedStringKey(self)
     }
-    
+
     var localized: String {
         String(localized: String.LocalizationValue(self))
+    }
+
+    func localizedFormat(_ args: CVarArg...) -> String {
+        String(format: self.localized, arguments: args)
     }
 }

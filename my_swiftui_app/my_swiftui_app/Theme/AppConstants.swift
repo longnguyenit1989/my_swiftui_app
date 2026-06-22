@@ -13,6 +13,8 @@ enum AppConstants {
 
     static let imageItemHeight: CGFloat = 80
     static let imageDetailHeight: CGFloat = 140
+    
+    static let avatarSize: CGFloat = 48
 
     static let cardWidth: CGFloat = 180
 

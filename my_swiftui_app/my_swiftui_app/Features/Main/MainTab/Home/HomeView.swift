@@ -6,14 +6,27 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
+    
+    @State private var avatar: UIImage?
     
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: true) {
                 VStack(spacing: AppSpacing.paddingItemLarge) {
+                    
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: AppSpacing.xxs) {
+                            Text(Date(), format: .fullDate).textJp14(color: AppColor.shared.gray)
+                            Text(AppStrings.Home.welcome.localizedFormat(KeychainStorage.shared.email ?? "")).textJp16Bold()
+                        }
+                        Spacer()
+                        AvatarPickerView(image: $avatar)
+                    }
+                    
                     BannerCarouselView(height: AppConstants.bannerHeight)
                         .padding(.bottom, AppSpacing.contentBottom)
                     

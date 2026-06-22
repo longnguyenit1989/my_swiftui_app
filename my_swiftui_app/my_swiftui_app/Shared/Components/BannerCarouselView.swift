@@ -74,7 +74,6 @@ struct BannerCarouselView: View {
                 .padding(.horizontal)
             }
             .frame(height: height)
-            .padding(.horizontal, AppSpacing.sm)
             
             // indicator
             HStack(spacing: AppSpacing.xs) {

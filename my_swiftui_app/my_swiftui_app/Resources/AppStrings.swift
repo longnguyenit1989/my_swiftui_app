@@ -84,6 +84,7 @@ enum AppStrings {
         static let version = "profile.version"
         static let sureLogout = "profile.sureLogout"
         static let chooseLanguage = "profile.chooseLanguage"
+        static let darkTheme = "profile.darkTheme"
     }
 
     enum LanguageSheet {

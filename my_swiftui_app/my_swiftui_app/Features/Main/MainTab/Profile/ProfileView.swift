@@ -11,6 +11,7 @@ struct ProfileView: View {
     
     @EnvironmentObject private var session: SessionManager
     @EnvironmentObject private var languageManager: LanguageManager
+    @EnvironmentObject private var themeManager: ThemeManager
     
     @State private var showLogoutAlert = false
     @State private var showLanguageSheet = false
@@ -19,7 +20,7 @@ struct ProfileView: View {
     @State private var showTerm = false
     @State private var showPrivacy = false
     @State private var showLicense = false
-    
+        
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -35,6 +36,9 @@ struct ProfileView: View {
                             showLanguageSheet = true
                         },
                         trailingText: languageManager.currentLanguage.displayName)
+                    SectionItem(title: AppStrings.Profile.darkTheme, hideChevron: true) {
+                        SectionToggle(isOn: $themeManager.isDarkMode)
+                    }
                     SectionItem(title: AppStrings.Profile.notification)
                         .padding(.bottom,AppSpacing.contentBottom)
                     SectionHeader(title: AppStrings.Profile.other)
