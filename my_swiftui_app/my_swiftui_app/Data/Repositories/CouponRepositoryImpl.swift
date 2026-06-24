@@ -8,10 +8,27 @@
 import Foundation
 
 final class CouponRepositoryImpl: CouponRepository {
-    func getCoupons() throws -> [Coupon] {
-        try Bundle.main.decode(
-            [Coupon].self,
-            from: "coupons"
+    func getCoupons(page: Int) async throws -> [Coupon] {
+        
+        try await Task.sleep(for: .seconds(1))
+        
+        let fileName: String
+        
+        switch page {
+            
+        case 1:
+            fileName = "coupons"
+            
+        case 2:
+            fileName = "coupons_1"
+            
+        default:
+            return []
+        }
+        
+        return try JsonLoader.load(
+            fileName: fileName,
+            type: [Coupon].self
         )
     }
 }

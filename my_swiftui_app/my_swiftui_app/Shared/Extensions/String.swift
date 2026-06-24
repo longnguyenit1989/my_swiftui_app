@@ -25,4 +25,8 @@ extension String {
     func localizedFormat(_ args: CVarArg...) -> String {
         String(format: self.localized, arguments: args)
     }
+    
+    func matches(_ keyword: String) -> Bool {
+        self.localizedCaseInsensitiveContains(keyword)
+    }
 }

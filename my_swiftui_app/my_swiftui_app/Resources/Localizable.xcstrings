@@ -167,6 +167,23 @@
         }
       }
     },
+    "coupons" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coupons"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クーポン"
+          }
+        }
+      }
+    },
     "electronics" : {
       "comment" : "家電",
       "extractionState" : "manual",
@@ -837,6 +854,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "数量:"
+          }
+        }
+      }
+    },
+    "searchAnything" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search anything…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "何でも検索…"
           }
         }
       }

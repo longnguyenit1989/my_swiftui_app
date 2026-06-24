@@ -1,0 +1,92 @@
+[
+  {
+    "id": "11",
+    "imageName": "couponImageSample",
+    "title": "Starbucks Coffee",
+    "storeName": "Cafe",
+    "discountText": "Buy 1 Get 1 Free",
+    "expirationDate": "有効期限：2025/11/30",
+    "isFavorite": false
+  },
+  {
+    "id": "12",
+    "imageName": "couponImageSample",
+    "title": "Tully's Coffee",
+    "storeName": "Cafe",
+    "discountText": "15%OFF",
+    "expirationDate": "有効期限：2025/12/10",
+    "isFavorite": false
+  },
+  {
+    "id": "13",
+    "imageName": "couponImageSample",
+    "title": "McDonald's",
+    "storeName": "Fast Food",
+    "discountText": "セット50円引き",
+    "expirationDate": "有効期限：2025/12/05",
+    "isFavorite": false
+  },
+  {
+    "id": "14",
+    "imageName": "couponImageSample",
+    "title": "KFC",
+    "storeName": "Fast Food",
+    "discountText": "20%OFF",
+    "expirationDate": "有効期限：2025/12/18",
+    "isFavorite": false
+  },
+  {
+    "id": "15",
+    "imageName": "couponImageSample",
+    "title": "IKEA",
+    "storeName": "Furniture",
+    "discountText": "500円OFF",
+    "expirationDate": "有効期限：2025/12/28",
+    "isFavorite": false
+  },
+  {
+    "id": "16",
+    "imageName": "couponImageSample",
+    "title": "Nitori",
+    "storeName": "Furniture",
+    "discountText": "10%OFF",
+    "expirationDate": "有効期限：2025/12/22",
+    "isFavorite": false
+  },
+  {
+    "id": "17",
+    "imageName": "couponImageSample",
+    "title": "Tsutaya",
+    "storeName": "Books & Media",
+    "discountText": "300円OFF",
+    "expirationDate": "有効期限：2025/12/14",
+    "isFavorite": false
+  },
+  {
+    "id": "18",
+    "imageName": "couponImageSample",
+    "title": "Book Off",
+    "storeName": "Books & Media",
+    "discountText": "5%OFF",
+    "expirationDate": "有効期限：2025/12/26",
+    "isFavorite": false
+  },
+  {
+    "id": "19",
+    "imageName": "couponImageSample",
+    "title": "AEON Cinema",
+    "storeName": "Entertainment",
+    "discountText": "映画チケット200円OFF",
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
+  },
+  {
+    "id": "20",
+    "imageName": "couponImageSample",
+    "title": "Round One",
+    "storeName": "Entertainment",
+    "discountText": "2時間パック10%OFF",
+    "expirationDate": "有効期限：2025/12/31",
+    "isFavorite": false
+  }
+]

@@ -64,6 +64,10 @@ enum AppStrings {
         static let toys = "toys"
     }
     
+    enum Search {
+        static let searchAnything = "searchAnything"
+    }
+    
     enum Favourite {
         static let noFavourite = "noFavourite"
     }
@@ -101,6 +105,10 @@ enum AppStrings {
     
     enum Products {
         static let products = "products"
+    }
+    
+    enum Coupons {
+        static let coupons = "coupons"
     }
     
     enum Notifications {

@@ -16,6 +16,10 @@ final class SearchViewModel: ObservableObject {
     private let storeRepository: StoreRepository = StoreRepositoryImpl()
     private let couponRepository: CouponRepository = CouponRepositoryImpl()
     
+    private var allProducts: [Product] = []
+    private var allCoupons: [Coupon] = []
+    private var allStores: [Store] = []
+    
     var favoriteProducts: [Product] {
         state.products.filter(\.isFavorite)
     }
@@ -31,14 +35,16 @@ final class SearchViewModel: ObservableObject {
     init() {
         Task {
             await loadProducts()
-            loadCoupons()
+            await loadCoupons()
             loadStores()
         }
     }
     
-    private func loadCoupons() {
+    private func loadCoupons() async {
         do {
-            state.coupons = try couponRepository.getCoupons()
+            let coupons = try await couponRepository.getCoupons(page: 1)
+            state.coupons = coupons
+            allCoupons = coupons
         } catch {
             print(error)
         }
@@ -46,7 +52,9 @@ final class SearchViewModel: ObservableObject {
     
     private func loadProducts() async {
         do {
-            state.products = try await productRepository.getProducts(page: 1)
+            let products = try await productRepository.getProducts(page: 1)
+            state.products = products
+            allProducts = products
         } catch {
             print(error)
         }
@@ -54,7 +62,9 @@ final class SearchViewModel: ObservableObject {
     
     private func loadStores() {
         do {
-            state.stores = try storeRepository.getStores()
+            let stores = try storeRepository.getStores()
+            state.stores = stores
+            allStores = stores
         } catch {
             print(error)
         }
@@ -62,25 +72,55 @@ final class SearchViewModel: ObservableObject {
     
     func toggleFavorite(id: String, type: FavoriteType, fallbackProduct: Product? = nil) {
         switch type {
+            
         case .products:
-            if let index = state.products.firstIndex(where: { $0.id == id }) {
-                state.products[index].isFavorite.toggle()
+            if let index = allProducts.firstIndex(where: { $0.id == id }) {
+                allProducts[index].isFavorite.toggle()
             } else if var product = fallbackProduct {
                 product.isFavorite.toggle()
-                state.products.append(product)
+                allProducts.append(product)
             }
+            applyFilter()
             
         case .coupons:
-            guard let index = state.coupons.firstIndex(where: { $0.id == id }) else {
-                return
+            if let index = allCoupons.firstIndex(where: { $0.id == id }) {
+                allCoupons[index].isFavorite.toggle()
             }
-            state.coupons[index].isFavorite.toggle()
+            applyFilter()
             
         case .stores:
-            guard let index = state.stores.firstIndex(where: { $0.id == id }) else {
-                return
+            if let index = allStores.firstIndex(where: { $0.id == id }) {
+                allStores[index].isFavorite.toggle()
             }
-            state.stores[index].isFavorite.toggle()
+            applyFilter()
+        }
+    }
+    
+    func search(keyword: String) {
+        state.searchKeyword = keyword
+        applyFilter()
+    }
+    
+    private func applyFilter() {
+        let keyword = state.searchKeyword.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard !keyword.isEmpty else {
+            state.products = allProducts
+            state.coupons = allCoupons
+            state.stores = allStores
+            return
+        }
+        
+        state.products = allProducts.filter {
+            $0.title.matches(keyword)
+        }
+        
+        state.coupons = allCoupons.filter {
+            $0.title.matches(keyword)
+        }
+        
+        state.stores = allStores.filter {
+            $0.title.matches(keyword)
         }
     }
 }

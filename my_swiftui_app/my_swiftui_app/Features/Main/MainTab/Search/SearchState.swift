@@ -8,6 +8,8 @@
 import Foundation
 
 struct SearchState {
+    var searchKeyword: String = ""
+    
     var coupons: [Coupon] = []
     var products: [Product] = []
     var stores: [Store] = []

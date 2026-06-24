@@ -6,5 +6,5 @@
 //
 
 protocol CouponRepository {
-    func getCoupons() throws -> [Coupon]
+    func getCoupons(page: Int) async throws -> [Coupon]
 }
