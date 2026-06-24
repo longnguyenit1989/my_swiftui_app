@@ -16,7 +16,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: true) {
-                VStack(spacing: AppSpacing.paddingItemLarge) {
+                VStack(spacing: AppSpacing.paddingItem) {
                     
                     HStack(alignment: .top) {
                         VStack(alignment: .leading, spacing: AppSpacing.xxs) {
@@ -39,17 +39,13 @@ struct HomeView: View {
                                     viewModel.selectCategory(id: category.id)
                                 }
                         }
-                    }
+                    }.padding(.bottom, AppSpacing.contentBottom)
                     
-                    HStack() {
-                        Text(AppStrings.Home.flashSale.l10n).textJp16Bold()
-                        Spacer()
-                        CountdownView(initialSeconds: 60*2*60)
-                    }
+                    WeeklySalesChartView()
                 }
             }
             
-            .padding()
+            .paddingScreen()
             .navigationTitle(Text(AppStrings.Main.home.l10n))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

@@ -184,6 +184,9 @@
         }
       }
     },
+    "Day" : {
+
+    },
     "electronics" : {
       "comment" : "家電",
       "extractionState" : "manual",
@@ -300,6 +303,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "フラッシュセール"
+          }
+        }
+      }
+    },
+    "fri" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fri"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "金"
           }
         }
       }
@@ -437,6 +457,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "検索"
+          }
+        }
+      }
+    },
+    "mon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "月"
           }
         }
       }
@@ -858,6 +895,26 @@
         }
       }
     },
+    "sale_this_week" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sales This Week"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今週のセール"
+          }
+        }
+      }
+    },
+    "Sales" : {
+
+    },
     "searchAnything" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -980,6 +1037,23 @@
     "This is notification content %lld" : {
 
     },
+    "thu" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thu"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "木"
+          }
+        }
+      }
+    },
     "toys" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -993,6 +1067,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "おもちゃ"
+          }
+        }
+      }
+    },
+    "tue" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tue"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "火"
           }
         }
       }
@@ -1115,6 +1206,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "腕時計"
+          }
+        }
+      }
+    },
+    "wed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wed"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "水"
           }
         }
       }

@@ -39,4 +39,8 @@ extension View {
     func hideBottomBar() -> some View {
         toolbar(.hidden, for: .tabBar)
     }
+    
+    func paddingScreen() -> some View {
+        padding(AppSpacing.screenHorizontal)
+    }
 }

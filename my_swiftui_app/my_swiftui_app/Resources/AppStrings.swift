@@ -62,6 +62,15 @@ enum AppStrings {
         static let books = "books"
         static let furniture = "furniture"
         static let toys = "toys"
+        static let saleThisWeek = "sale_this_week"
+    }
+    
+    enum Chart {
+        static let mon = "mon"
+        static let tue = "tue"
+        static let wed = "wed"
+        static let thu = "thu"
+        static let fri = "fri"
     }
     
     enum Search {

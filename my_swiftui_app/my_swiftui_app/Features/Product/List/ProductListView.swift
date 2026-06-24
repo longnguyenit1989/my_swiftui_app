@@ -45,7 +45,7 @@ struct ProductListView: View {
                     .onAppear { Task { await viewModel.loadMoreIfNeeded(for: product) } }
                 }
             }
-            .padding()
+            .paddingScreen()
             
             PagingFooter(isLoading: viewModel.pagingState.isLoadingMore)
         }

@@ -64,7 +64,7 @@ struct ProfileView: View {
                     }
                 }
             }
-            .padding()
+            .paddingScreen()
             .navigationTitle(Text(AppStrings.Main.profile.l10n))
             .navigationBarTitleDisplayMode(.inline)
             .alert(AppStrings.Profile.logout.l10n, isPresented: $showLogoutAlert) {

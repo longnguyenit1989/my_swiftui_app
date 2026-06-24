@@ -71,10 +71,9 @@ struct ProductDetailView: View {
                         })
                         .frame(maxWidth: .infinity)
                     }
-                    
                 }
-                       .padding()
             }
+            .paddingScreen()
             .navigationTitle(AppStrings.ProductDetail.title.l10n)
             .hideBottomBar()
         }

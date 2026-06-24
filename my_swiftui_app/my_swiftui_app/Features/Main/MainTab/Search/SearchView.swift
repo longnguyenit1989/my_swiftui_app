@@ -82,7 +82,7 @@ struct SearchView: View {
                     }
                 }
             }
-            .padding()
+            .paddingScreen()
             .navigationTitle(Text(AppStrings.Main.search.l10n))
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(item: $selectedProduct) { product in

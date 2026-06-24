@@ -10,12 +10,12 @@ import SwiftUI
 struct FavouriteView: View {
     @ObservedObject var viewModel: SearchViewModel
     @State private var selectedTab = 0
-
+    
     private let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
@@ -24,19 +24,19 @@ struct FavouriteView: View {
                         title: AppStrings.Common.product.l10n,
                         index: 0
                     )
-
+                    
                     tabButton(
                         title: AppStrings.Common.coupon.l10n,
                         index: 1
                     )
-
+                    
                     tabButton(
                         title: AppStrings.Common.store.l10n,
                         index: 2
                     )
                 }
-                .padding(.horizontal)
-
+                .paddingScreen()
+                
                 TabView(selection: $selectedTab) {
                     productTab.tag(0)
                     couponTab.tag(1)
@@ -48,7 +48,7 @@ struct FavouriteView: View {
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-
+    
     @ViewBuilder
     private func tabButton(
         title: LocalizedStringKey,
@@ -66,7 +66,7 @@ struct FavouriteView: View {
                         ? AppColor.shared.primary
                         : AppColor.shared.textPrimary
                     )
-
+                
                 Rectangle()
                     .fill(
                         selectedTab == index
@@ -79,7 +79,7 @@ struct FavouriteView: View {
         .buttonStyle(.plain)
         .frame(maxWidth: .infinity)
     }
-
+    
     private var productTab: some View {
         favoriteGrid(items: viewModel.favoriteProducts) { product in
             ProductItemView(
@@ -94,7 +94,7 @@ struct FavouriteView: View {
             )
         }
     }
-
+    
     private var couponTab: some View {
         favoriteGrid(items: viewModel.favoriteCoupons) { coupon in
             CouponItemView(
@@ -108,7 +108,7 @@ struct FavouriteView: View {
             )
         }
     }
-
+    
     private var storeTab: some View {
         favoriteGrid(items: viewModel.favoriteStores) { store in
             StoreItemView(
@@ -122,13 +122,13 @@ struct FavouriteView: View {
             )
         }
     }
-
+    
     @ViewBuilder
     private func favoriteGrid<Item: Identifiable, Content: View>(
         items: [Item],
         @ViewBuilder content: @escaping (Item) -> Content
     ) -> some View {
-
+        
         if items.isEmpty {
             ContentUnavailableView(
                 AppStrings.Favourite.noFavourite.l10n,
