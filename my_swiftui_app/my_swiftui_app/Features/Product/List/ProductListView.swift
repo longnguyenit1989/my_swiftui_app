@@ -30,6 +30,7 @@ struct ProductListView: View {
                     
                     ProductItemView(
                         product: displayProduct,
+                        width: nil,
                         showFavourite: true,
                         onFavoriteTap: {
                             searchViewModel.toggleFavorite(

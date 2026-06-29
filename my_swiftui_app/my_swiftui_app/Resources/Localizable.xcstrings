@@ -7,10 +7,25 @@
     " %lld" : {
 
     },
+    "-%lld%%" : {
+
+    },
+    "-12%" : {
+
+    },
+    "(42 reviews)" : {
+
+    },
     "%lld" : {
 
     },
+    "%lld%%" : {
+
+    },
     "%lld$" : {
+
+    },
+    "269 sold" : {
 
     },
     "add_to_cart" : {
@@ -60,6 +75,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "美容"
+          }
+        }
+      }
+    },
+    "best_selling_item" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Best selling item"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ベストセラー商品"
           }
         }
       }
@@ -116,6 +148,23 @@
         }
       }
     },
+    "choose_your_discount" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose your discount"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "割引を選択してください"
+          }
+        }
+      }
+    },
     "closing_in" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -146,6 +195,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "衣類"
+          }
+        }
+      }
+    },
+    "color" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Color:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "色:"
           }
         }
       }
@@ -1050,6 +1116,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "木"
+          }
+        }
+      }
+    },
+    "total_price" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total price:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "合計金額："
           }
         }
       }

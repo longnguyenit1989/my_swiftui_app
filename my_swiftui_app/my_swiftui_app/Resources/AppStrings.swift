@@ -108,6 +108,8 @@ enum AppStrings {
     enum ProductDetail {
         static let title = "product_detail"
         static let price = "price"
+        static let totalPrice = "total_price"
+        static let color = "color"
         static let addToCart = "add_to_cart"
         static let quantity = "quantity"
     }
@@ -122,5 +124,10 @@ enum AppStrings {
     
     enum Notifications {
         static let notifications = "notifications"
+    }
+    
+    enum FlashSale {
+        static let chooseYourDiscount = "choose_your_discount"
+        static let bestSellingItem = "best_selling_item"
     }
 }

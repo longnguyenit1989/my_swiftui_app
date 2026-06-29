@@ -7,4 +7,5 @@
 
 protocol ProductRepository {
     func getProducts(page: Int) async throws -> [Product]
+    func getFlashSaleProducts(page: Int) async throws -> [Product]
 }

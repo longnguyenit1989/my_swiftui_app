@@ -20,7 +20,7 @@ struct FavoriteButton: View {
             )
             .font(.system(size: 18))
             .foregroundStyle(
-                isFavorite ? .red : AppColor.shared.textTertiary
+                isFavorite ? AppColor.shared.primary : AppColor.shared.textTertiary
             )
         }
         .buttonStyle(.plain)

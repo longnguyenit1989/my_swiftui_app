@@ -7,6 +7,25 @@
 
 import SwiftUI
 
+struct TextCapsuleModifier: ViewModifier {
+    
+    let font: Font
+    let horizontalPadding: CGFloat
+    let verticalPadding: CGFloat
+    let backgroundColor: Color
+    let cornerRadius: CGFloat
+    
+    func body(content: Content) -> some View {
+        content
+            .font(font)
+            .padding(.horizontal, horizontalPadding)
+            .padding(.vertical, verticalPadding)
+            .background(backgroundColor)
+            .foregroundStyle(.white)
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+    }
+}
+
 extension View {
     func appContainer(_ viewState: Binding<ViewState>) -> some View {
         modifier(AppContainerModifier(viewState: viewState))
@@ -42,5 +61,23 @@ extension View {
     
     func paddingScreen() -> some View {
         padding(AppSpacing.screenHorizontal)
+    }
+    
+    func textCapsule(
+        font: Font = .subheadline,
+        horizontalPadding: CGFloat = 12,
+        verticalPadding: CGFloat = 6,
+        backgroundColor: Color = AppColor.shared.primary,
+        cornerRadius: CGFloat = 12
+    ) -> some View {
+        modifier(
+            TextCapsuleModifier(
+                font: font,
+                horizontalPadding: horizontalPadding,
+                verticalPadding: verticalPadding,
+                backgroundColor: backgroundColor,
+                cornerRadius: cornerRadius
+            )
+        )
     }
 }

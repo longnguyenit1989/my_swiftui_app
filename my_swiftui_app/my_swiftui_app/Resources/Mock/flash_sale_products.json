@@ -1,0 +1,112 @@
+[
+  {
+    "id": "16",
+    "imageName": "projector",
+    "price": 249,
+    "title": "Portable HD Projector",
+    "des": "Compact projector with Full HD support for home entertainment and presentations.",
+    "storeName": "Vision Tech",
+    "starCount": 5.0,
+    "discount": 30,
+    "isFavorite": false
+  },
+  {
+    "id": "17",
+    "imageName": "ssd",
+    "price": 119,
+    "title": "1TB Portable SSD",
+    "des": "High-speed external SSD with USB-C connectivity.",
+    "storeName": "Storage House",
+    "starCount": 5.0,
+    "discount": 20,
+    "isFavorite": false
+  },
+  {
+    "id": "18",
+    "imageName": "webcam",
+    "price": 69,
+    "title": "1080P HD Webcam",
+    "des": "Crystal-clear webcam with built-in microphone for online meetings.",
+    "storeName": "Office Tech",
+    "starCount": 4.0,
+    "discount": 10,
+    "isFavorite": false
+  },
+  {
+    "id": "19",
+    "imageName": "printer",
+    "price": 199,
+    "title": "Wireless Inkjet Printer",
+    "des": "Print documents and photos wirelessly from any device.",
+    "storeName": "Print Center",
+    "starCount": 4.0,
+    "discount": 40,
+    "isFavorite": false
+  },
+  {
+    "id": "20",
+    "imageName": "monitorLight",
+    "price": 39,
+    "title": "LED Monitor Light Bar",
+    "des": "Eye-friendly monitor light with adjustable brightness.",
+    "storeName": "Workspace Pro",
+    "starCount": 5.0,
+    "discount": 20,
+    "isFavorite": false
+  },
+  {
+    "id": "21",
+    "imageName": "deskLamp",
+    "price": 35,
+    "title": "Smart Desk Lamp",
+    "des": "Touch-controlled desk lamp with multiple lighting modes.",
+    "storeName": "Home Office",
+    "starCount": 4.0,
+    "discount": 30,
+    "isFavorite": false
+  },
+  {
+    "id": "22",
+    "imageName": "vrHeadset",
+    "price": 399,
+    "title": "VR Gaming Headset",
+    "des": "Immersive virtual reality headset with high-resolution display.",
+    "storeName": "Game Planet",
+    "starCount": 5.0,
+    "discount": 40,
+    "isFavorite": false
+  },
+  {
+    "id": "23",
+    "imageName": "graphicsTablet",
+    "price": 149,
+    "title": "Graphic Drawing Tablet",
+    "des": "Professional drawing tablet for artists and designers.",
+    "storeName": "Creative Lab",
+    "starCount": 5.0,
+    "discount": 10,
+    "isFavorite": false
+  },
+  {
+    "id": "24",
+    "imageName": "smartBulb",
+    "price": 25,
+    "title": "Wi-Fi Smart Bulb",
+    "des": "Control your lighting remotely with voice assistant support.",
+    "storeName": "Smart Living",
+    "starCount": 4.0,
+    "discount": 20,
+    "isFavorite": false
+  },
+  {
+    "id": "25",
+    "imageName": "airPurifier",
+    "price": 159,
+    "title": "Compact Air Purifier",
+    "des": "Removes dust, allergens, and odors for cleaner indoor air.",
+    "storeName": "Healthy Home",
+    "starCount": 5.0,
+    "discount": 30,
+    "isFavorite": false
+  }
+]

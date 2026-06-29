@@ -1,0 +1,112 @@
+[
+  {
+    "id": "26",
+    "imageName": "coffeeMaker",
+    "price": 89,
+    "title": "Automatic Coffee Maker",
+    "des": "Brew fresh coffee every morning with programmable settings.",
+    "storeName": "Kitchen Plus",
+    "starCount": 4.0,
+    "discount": 40,
+    "isFavorite": false
+  },
+  {
+    "id": "27",
+    "imageName": "electricKettle",
+    "price": 42,
+    "title": "Electric Glass Kettle",
+    "des": "Fast-boiling kettle with automatic shut-off protection.",
+    "storeName": "Kitchen Plus",
+    "starCount": 5.0,
+    "discount": 10,
+    "isFavorite": false
+  },
+  {
+    "id": "28",
+    "imageName": "vacuumCleaner",
+    "price": 229,
+    "title": "Cordless Vacuum Cleaner",
+    "des": "Lightweight cordless vacuum with powerful suction.",
+    "storeName": "Home Clean",
+    "starCount": 5.0,
+    "discount": 30,
+    "isFavorite": false
+  },
+  {
+    "id": "29",
+    "imageName": "electricFan",
+    "price": 54,
+    "title": "Rechargeable Desk Fan",
+    "des": "Portable desk fan with adjustable speed settings.",
+    "storeName": "Cool Breeze",
+    "starCount": 4.0,
+    "discount": 20,
+    "isFavorite": false
+  },
+  {
+    "id": "30",
+    "imageName": "fitnessBand",
+    "price": 59,
+    "title": "Fitness Tracker Band",
+    "des": "Track steps, calories, sleep, and heart rate all day.",
+    "storeName": "Fit World",
+    "starCount": 5.0,
+    "discount": 40,
+    "isFavorite": false
+  },
+  {
+    "id": "31",
+    "imageName": "robotVacuum",
+    "price": 349,
+    "title": "Robot Vacuum Cleaner",
+    "des": "Automatic robot vacuum with smart mapping technology.",
+    "storeName": "Smart Home",
+    "starCount": 5.0,
+    "discount": 20,
+    "isFavorite": false
+  },
+  {
+    "id": "32",
+    "imageName": "gamingChair",
+    "price": 199,
+    "title": "Ergonomic Gaming Chair",
+    "des": "Comfortable chair with lumbar support for long gaming sessions.",
+    "storeName": "Gaming Zone",
+    "starCount": 4.0,
+    "discount": 30,
+    "isFavorite": false
+  },
+  {
+    "id": "33",
+    "imageName": "smartLock",
+    "price": 179,
+    "title": "Fingerprint Smart Lock",
+    "des": "Secure your home with fingerprint and mobile app access.",
+    "storeName": "Safe Home",
+    "starCount": 5.0,
+    "discount": 10,
+    "isFavorite": false
+  },
+  {
+    "id": "34",
+    "imageName": "humidifier",
+    "price": 65,
+    "title": "Ultrasonic Humidifier",
+    "des": "Quiet humidifier with adjustable mist output and night mode.",
+    "storeName": "Healthy Home",
+    "starCount": 4.0,
+    "discount": 20,
+    "isFavorite": false
+  },
+  {
+    "id": "35",
+    "imageName": "electricScooter",
+    "price": 499,
+    "title": "Foldable Electric Scooter",
+    "des": "Portable electric scooter with long battery life and dual brakes.",
+    "storeName": "Urban Ride",
+    "starCount": 5.0,
+    "discount": 40,
+    "isFavorite": false
+  }
+]

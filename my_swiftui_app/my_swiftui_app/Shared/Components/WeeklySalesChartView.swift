@@ -9,9 +9,9 @@ import SwiftUI
 import Charts
 
 struct WeeklySalesChartView: View {
-    
+    @State private var showFlashSale: Bool = false
     @Environment(\.locale) private var locale
-    
+
     private let data: [WeeklySale] = [
         .init(dayKey: AppStrings.Chart.mon, sales: 3),
         .init(dayKey: AppStrings.Chart.tue, sales: 6),
@@ -31,8 +31,9 @@ struct WeeklySalesChartView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: AppSpacing.md) {
-            
-            Text(AppStrings.Home.saleThisWeek.l10n).textJp16Bold()
+            SectionTitleView(title: AppStrings.Home.saleThisWeek) {
+                showFlashSale = true
+            }
             
             Chart(chartData, id: \.day) { item in
                 BarMark(
@@ -46,6 +47,9 @@ struct WeeklySalesChartView: View {
             }
             .frame(height: 180)
             .chartYAxis(.hidden)
+        }
+        .navigationDestination(isPresented: $showFlashSale) {
+            FlashSaleView().hideBottomBar()
         }
     }
 }

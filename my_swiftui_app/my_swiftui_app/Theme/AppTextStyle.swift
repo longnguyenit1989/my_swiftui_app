@@ -13,6 +13,7 @@ enum AppTextStyle {
     static let jp14Size: CGFloat = 14
     static let jp16Size: CGFloat = 16
     static let jp18Size: CGFloat = 18
+    static let jp20Size: CGFloat = 20
     
     static func jp(
         size: CGFloat,
@@ -35,4 +36,7 @@ enum AppTextStyle {
     
     static let jp16 = jp(size: jp16Size, weight: .regular)
     static let jp16Bold = jp(size: jp16Size, weight: .bold)
+    
+    static let jp20 = jp(size: jp20Size, weight: .regular)
+    static let jp20Bold = jp(size: jp20Size, weight: .bold)
 }

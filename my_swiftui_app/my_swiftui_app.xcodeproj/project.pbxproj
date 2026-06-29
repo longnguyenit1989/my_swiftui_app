@@ -19,6 +19,8 @@
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = FB50D8B22FD032EA00E1B6F9 /* Sources */;
 			membershipExceptions = (
+				Resources/Mock/flash_sale_products_1.json,
+				Resources/Mock/flash_sale_products.json,
 				Resources/Mock/products_1.json,
 				Resources/Mock/products.json,
 			);

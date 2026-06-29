@@ -13,6 +13,7 @@ struct Product: Identifiable, Codable, Hashable {
     let des: String
     let storeName: String
     let starCount: Double
+    let discount: Int?
     
     var isFavorite: Bool
 
@@ -24,7 +25,8 @@ struct Product: Identifiable, Codable, Hashable {
         storeName: String,
         des: String,
         starCount: Double,
-        isFavorite: Bool = false
+        isFavorite: Bool = false,
+        discount: Int
     ) {
         self.id = id
         self.imageName = imageName
@@ -34,5 +36,6 @@ struct Product: Identifiable, Codable, Hashable {
         self.storeName = storeName
         self.starCount = starCount
         self.isFavorite = isFavorite
+        self.discount = discount
     }
 }

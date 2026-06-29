@@ -105,4 +105,14 @@ extension Text {
             textColor: color
         )
     }
+    
+    func textJp20Bold(
+        color: Color = AppColor.shared.textPrimary
+    ) -> some View {
+        applyTextStyle(
+            font: AppTextStyle.jp20Bold,
+            fontSize: AppTextStyle.jp20Size,
+            textColor: color
+        )
+    }
 }
