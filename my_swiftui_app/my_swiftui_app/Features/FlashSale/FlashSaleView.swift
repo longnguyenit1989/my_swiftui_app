@@ -15,16 +15,14 @@ struct FlashSaleView: View {
         GridItem(.flexible(), spacing: AppSpacing.xs)
     ]
     
-    @State private var selectedDiscount = 0
-    
     let discounts = [10, 20, 30, 40]
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 24) {
-                VStack(spacing: 24) {
+            VStack(alignment: .leading, spacing: AppSpacing.lg) {
+                VStack(spacing: AppSpacing.lg) {
                     HStack(alignment: .top) {
-                        VStack(alignment: .leading, spacing: 8) {
+                        VStack(alignment: .leading, spacing: AppSpacing.xs) {
                             Text(AppStrings.Home.flashSale.l10n)
                                 .textJp20Bold(color: .white)
                             Text(AppStrings.FlashSale.chooseYourDiscount.l10n)
@@ -44,9 +42,9 @@ struct FlashSaleView: View {
                         )
                     )
                 }
-                .padding(20)
+                .padding(AppSpacing.sm)
                 .background(
-                    RoundedRectangle(cornerRadius: 24)
+                    RoundedRectangle(cornerRadius: AppConstants.radiusButton)
                         .fill(AppColor.shared.primary)
                 )
                 
@@ -54,13 +52,8 @@ struct FlashSaleView: View {
                 
                 LazyVGrid(columns: columns, spacing: AppSpacing.xs) {
                     ForEach(viewModel.filteredProducts) { product in
-                        let displayProduct: Product = {
-                            let p = product
-                            return p
-                        }()
-                        
                         ProductItemView(
-                            product: displayProduct,
+                            product: product,
                             width: nil,
                             showFavourite: false,
                             onFavoriteTap: {}
